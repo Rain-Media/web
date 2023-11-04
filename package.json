@@ -1,0 +1,30 @@
+{
+  "name": "rain-web",
+  "version": "1.0.0",
+  "description": "Rain Media web project",
+  "main": "index.js",
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/Rain-Media/web.git"
+  },
+  "keywords": [
+    "rain"
+  ],
+  "author": "ardaninsaturnu",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Rain-Media/web/issues"
+  },
+  "homepage": "https://github.com/Rain-Media/web#readme",
+  "dependencies": {
+    "next": "^14.0.1",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  }
+}
