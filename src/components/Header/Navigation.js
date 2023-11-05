@@ -16,7 +16,10 @@ function Navigation(props) {
         <nav>
           <div className="flex gap-x-14 box-border text-white">
             {
-              routes.map((route, index) => <Link href={route.path} key={index}>{route.name}</Link>)}
+              routes.map((route, index) => (
+                <Link href={route.path} key={index}>{route.name}</Link>
+              ))
+            }
           </div>
         </nav>
         <div className="text-white font-bold">TR</div>
