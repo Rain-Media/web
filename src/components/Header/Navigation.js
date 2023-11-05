@@ -17,15 +17,13 @@ function Navigation(props) {
       <div className={`flex gap-x-6`}>
         {
           window.width > 680 ? (
-            <nav>
-              <div className="flex gap-x-14 box-border text-white">
+              <nav className="flex gap-x-14 box-border text-white">
                 {
                   routes.map((route, index) => (
                     <Link href={route.path} key={index}>{route.name}</Link>
                   ))
                 }
-              </div>
-            </nav>
+              </nav>
           ) : (
             <div className={`text-white`} onClick={ () => setOpenBurger(true ) }>
               <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 32 32" strokeWidth={2} stroke="currentColor" className="w-8 h-8">
@@ -44,7 +42,7 @@ function Navigation(props) {
           <div className={`flex flex-col gap-y-4 box-border items-center justify-center flex-1`}>
             {
               routes.map((route, index) => (
-                <Link href={route.path} key={index} className="text-2xl">{route.name}</Link>
+                <Link href={route.path} key={index} className="text-2xl" onClick={() => setOpenBurger(false)}>{route.name}</Link>
               ))
             }
           </div>
