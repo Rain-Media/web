@@ -12,18 +12,18 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
     <body>
-      <header className="flex justify-between items-center p-6">
+      <header className="flex justify-between items-center p-6 bg-black">
           <Image src={logo} alt="logo" width={100} height='auto'/>
-          <div className="flex gap-x-6">
+          <div className="flex gap-x-6 pr-10">
             <nav>
-              <div className="flex gap-x-14">
+              <div className="flex gap-x-14 box-border text-white">
                 <Link href="/about-us">Ana Sayfa</Link>
-                <Link href="/about-us">Biz</Link>
-                <Link href="/about-us">Ana Sayfa</Link>
-                <Link href="/about-us">Ana Sayfa</Link>
+                <Link href="/about-us">Biz Kimiz</Link>
+                <Link href="/about-us">Projeler</Link>
+                <Link href="/about-us">İletişim</Link>
               </div>
             </nav>
-            <div className="lang">TR</div>
+            <div className="text-white font-bold">TR</div>
           </div>
       </header>
       {children}
