@@ -1,7 +1,5 @@
-import logo from '/src/assets/images/oooo.png';
-import Image from "next/image";
 import './global.css';
-import Link from "next/link";
+import Navigation from "../src/components/Header/Navigation";
 
 export const metadata = {
   title: 'Rain Media Web Project',
@@ -12,20 +10,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
     <body>
-      <header className="flex justify-between items-center p-6 bg-black">
-          <Image src={logo} alt="logo" width={100} height='auto'/>
-          <div className="flex gap-x-6 pr-10">
-            <nav>
-              <div className="flex gap-x-14 box-border text-white">
-                <Link href="/about-us">Ana Sayfa</Link>
-                <Link href="/about-us">Biz Kimiz</Link>
-                <Link href="/about-us">Projeler</Link>
-                <Link href="/about-us">İletişim</Link>
-              </div>
-            </nav>
-            <div className="text-white font-bold">TR</div>
-          </div>
-      </header>
+      <Navigation/>
       {children}
     </body>
     </html>
