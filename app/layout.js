@@ -1,5 +1,6 @@
 import './global.css';
 import Navigation from "../src/components/Header/Navigation";
+import Header from "../src/components/Header";
 
 export const metadata = {
   title: 'Rain Media Web Project',
@@ -10,7 +11,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
     <body>
-      <Navigation/>
+      <Header/>
       {children}
     </body>
     </html>
