@@ -1,29 +1,23 @@
-"use client"
-
 import React from 'react';
 import Link from "next/link";
 import {routes} from "./constant";
 import {useWindowSize} from "../../hooks/useWindowSize";
 
-Navigation.propTypes = {
-
-};
-
-function Navigation(props) {
+function Navigation() {
   const window = useWindowSize();
   const [ openBurger, setOpenBurger ] = React.useState(false );
   
   return (
-      <div className={`flex gap-x-6`}>
+      <nav className={`flex gap-x-6`}>
         {
           window.width > 680 ? (
-              <nav className="flex gap-x-14 box-border text-white">
+              <div className="flex gap-x-14 box-border text-white">
                 {
                   routes.map((route, index) => (
                     <Link href={route.path} key={index}>{route.name}</Link>
                   ))
                 }
-              </nav>
+              </div>
           ) : (
             <div className={`text-white`} onClick={ () => setOpenBurger(true ) }>
               <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 32 32" strokeWidth={2} stroke="currentColor" className="w-8 h-8">
@@ -37,7 +31,6 @@ function Navigation(props) {
             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 32 32" strokeWidth={2} stroke="currentColor" className="w-8 h-8">
               <path strokeLinecap="round" strokeLinejoin="round" d="M6 18L18 6M6 6l12 12" />
             </svg>
-
           </div>
           <div className={`flex flex-col gap-y-4 box-border items-center justify-center flex-1`}>
             {
@@ -47,7 +40,7 @@ function Navigation(props) {
             }
           </div>
         </div>
-      </div>
+      </nav>
   );
 }
 

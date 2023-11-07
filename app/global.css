@@ -17,3 +17,7 @@ body {
 }
 
 /* Diğer global stil ayarları buraya eklenebilir */
+
+.swiper-button-prev:after, .swiper-button-next:after {
+    color: white;
+}
