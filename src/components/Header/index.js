@@ -7,10 +7,14 @@ import Navigation from "./Navigation";
 import Swiper from "./Swiper";
 import {usePathname} from "next/navigation";
 import {useSelector} from "react-redux";
+import backOur from "../../assets/images/backour.png";
+import Background from "./background";
 
 function Header() {
   const router = usePathname();
   const { open } = useSelector(state => state.hamburger);
+  
+  console.log(router)
   
   useEffect(() => {
     if(open) {
@@ -21,8 +25,8 @@ function Header() {
   },[open]);
   
   return (
-    <div className="relative">
-      <header className={`flex justify-between items-center w-full p-6 ${ router === '/' ? 'absolute z-20 bg-transparent' : 'bg-black' }`}>
+    <div className="relative h-[400px] md:h-screen md:max-h-[600px] overflow-hidden">
+      <header className={`flex justify-between items-center w-full p-6 ${ router === '/' || router === '/about-us' ? 'absolute z-20 bg-transparent' : 'bg-black' }`}>
         <Image src={logo} alt="logo" width={100} height='auto'/>
         <div className={`flex gap-x-6 pr-10`}>
           <Navigation/>
@@ -30,6 +34,7 @@ function Header() {
         </div>
       </header>
       { router === '/' && <Swiper/> }
+      { router === '/about-us' && <Background src={backOur}/> }
     </div>
   );
 }

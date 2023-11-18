@@ -19,10 +19,10 @@ export default () => {
       navigation={true}
       modules={[Navigation]}>
       <SwiperSlide>
-        <Image src={birmingham}/>
+        <Image src={birmingham} alt="home rain media"/>
       </SwiperSlide>
       <SwiperSlide>
-        <Image src={toma}/>
+        <Image src={toma} alt="home rain media"/>
       </SwiperSlide>
     </Swiper>
   );

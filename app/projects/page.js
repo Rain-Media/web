@@ -6,7 +6,9 @@ Page.propTypes = {
 
 function Page(props) {
   return (
-    <div>bam bam projects</div>
+    <>
+    alex
+    </>
   );
 }
 
