@@ -9,6 +9,7 @@ import {useParams, usePathname, useRouter} from "next/navigation";
 
 function Header() {
   const router = usePathname();
+  const [ openBurger, setOpenBurger ] = React.useState(false );
   console.log(router,'bebek gel')
   
   return (
@@ -16,7 +17,7 @@ function Header() {
       <header className={`flex justify-between items-center w-full p-6 ${ router === '/' ? 'absolute z-20 bg-transparent' : 'bg-black' }`}>
         <Image src={logo} alt="logo" width={100} height='auto'/>
         <div className={`flex gap-x-6 pr-10`}>
-          <Navigation/>
+          <Navigation openBurger={openBurger} setOpenBurger={setOpenBurger} />
           <div className="text-white font-bold">TR</div>
         </div>
       </header>

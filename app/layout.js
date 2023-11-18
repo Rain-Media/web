@@ -1,6 +1,7 @@
 import './global.css';
 import Header from "../src/components/Header";
 import Footer from "../src/components/Footer";
+import React from "react";
 
 
 export const metadata = {
@@ -9,6 +10,7 @@ export const metadata = {
 }
 
 export default function RootLayout({ children }) {
+  
   return (
     <html lang="en">
     <head>
