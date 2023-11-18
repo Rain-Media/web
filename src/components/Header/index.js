@@ -1,23 +1,31 @@
 "use client"
 
-import React from 'react';
+import React, {useEffect} from 'react';
 import Image from "next/image";
 import logo from "../../assets/images/oooo.png";
 import Navigation from "./Navigation";
 import Swiper from "./Swiper";
-import {useParams, usePathname, useRouter} from "next/navigation";
+import {usePathname} from "next/navigation";
+import {useSelector} from "react-redux";
 
 function Header() {
   const router = usePathname();
-  const [ openBurger, setOpenBurger ] = React.useState(false );
-  console.log(router,'bebek gel')
+  const { open } = useSelector(state => state.hamburger);
+  
+  useEffect(() => {
+    if(open) {
+      document.body.style.overflow = 'hidden';
+    } else {
+      document.body.style.overflow = 'unset';
+    }
+  },[open]);
   
   return (
     <div className="relative">
       <header className={`flex justify-between items-center w-full p-6 ${ router === '/' ? 'absolute z-20 bg-transparent' : 'bg-black' }`}>
         <Image src={logo} alt="logo" width={100} height='auto'/>
         <div className={`flex gap-x-6 pr-10`}>
-          <Navigation openBurger={openBurger} setOpenBurger={setOpenBurger} />
+          <Navigation/>
           <div className="text-white font-bold">TR</div>
         </div>
       </header>

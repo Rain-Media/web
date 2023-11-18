@@ -2,6 +2,8 @@ import './global.css';
 import Header from "../src/components/Header";
 import Footer from "../src/components/Footer";
 import React from "react";
+import Provider from "../src/store/provider";
+import {useSelector} from "react-redux";
 
 
 export const metadata = {
@@ -14,12 +16,14 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
     <head>
-      title={metadata.title}
+      <title>{metadata.title}</title>
     </head>
     <body>
-      <Header/>
-      {children}
-      <Footer/>
+      <Provider>
+        <Header/>
+        {children}
+        <Footer/>
+      </Provider>
     </body>
     </html>
   )
