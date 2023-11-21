@@ -3,8 +3,6 @@ import Header from "../src/components/Header";
 import Footer from "../src/components/Footer";
 import React from "react";
 import Provider from "../src/store/provider";
-import {useSelector} from "react-redux";
-
 
 export const metadata = {
   title: 'Rain Media Web Project',

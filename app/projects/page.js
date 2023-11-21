@@ -1,4 +1,5 @@
 import React from 'react';
+import ProjectTabs from "../../src/pages/projects/project-tabs";
 
 Page.propTypes = {
 
@@ -6,9 +7,9 @@ Page.propTypes = {
 
 function Page(props) {
   return (
-    <>
-    alex
-    </>
+    <div className="bg-[#1C1C1C]">
+      <ProjectTabs />
+    </div>
   );
 }
 

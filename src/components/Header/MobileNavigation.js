@@ -2,7 +2,7 @@ import {routes} from "./constant";
 import Link from "next/link";
 import React, {useEffect} from "react";
 import {useDispatch, useSelector} from "react-redux";
-import {setClose, setOpen} from "../../store/features/hamburgerSlice";
+import {setClose, setOpen} from "../../store/features/hamburger-menu/hamburgerSlice";
 
 const MobileNavigation = () => {
   const dispatch = useDispatch();

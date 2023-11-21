@@ -4,7 +4,7 @@ import {routes} from "./constant";
 import {useWindowSize} from "../../hooks/useWindowSize";
 import MobileNavigation from "./MobileNavigation";
 import {useDispatch} from "react-redux";
-import {setOpen} from "../../store/features/hamburgerSlice";
+import {setOpen} from "../../store/features/hamburger-menu/hamburgerSlice";
 
 function Navigation() {
   const window = useWindowSize();

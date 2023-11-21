@@ -25,7 +25,7 @@ function Header() {
   },[open]);
   
   return (
-    <div className="relative h-[400px] md:h-screen md:max-h-[600px] overflow-hidden">
+    <div className="relative h-[400px] md:h-screen md:max-h-[135px] overflow-hidden">
       <header className={`flex justify-between items-center w-full p-6 ${ router === '/' || router === '/about-us' ? 'absolute z-20 bg-transparent' : 'bg-black' }`}>
         <Image src={logo} alt="logo" width={100} height='auto'/>
         <div className={`flex gap-x-6 pr-10`}>
