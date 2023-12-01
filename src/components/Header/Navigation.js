@@ -1,6 +1,6 @@
 import React from 'react';
 import Link from "next/link";
-import {routes} from "./constant";
+import {routes} from "../../constants/constant";
 import {useWindowSize} from "../../hooks/useWindowSize";
 import MobileNavigation from "./MobileNavigation";
 import {useDispatch} from "react-redux";

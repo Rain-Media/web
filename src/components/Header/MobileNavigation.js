@@ -1,4 +1,4 @@
-import {routes} from "./constant";
+import {routes} from "../../constants/constant";
 import Link from "next/link";
 import React, {useEffect} from "react";
 import {useDispatch, useSelector} from "react-redux";
