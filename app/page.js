@@ -1,4 +1,4 @@
-import {footerLinks} from "../src/components/Footer/constant";
+import {footerLinks} from "../src/constants/constant";
 import Route from "../src/components/Footer/Route";
 import Image from "next/image";
 import opera from "../src/assets/images/opera.png";
