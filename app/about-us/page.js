@@ -1,9 +1,8 @@
 import React from 'react';
-import Image from "next/image";
 import film from "/src/assets/images/ph_film-slate.svg";
 
 import TeamMember from "../../src/pages/about-us/TeamMember";
-import {teamMembers} from "../../src/pages/about-us/constant";
+import {teamMembers} from "../../src/components/Header/constant";
 
 Page.propTypes = {
 
