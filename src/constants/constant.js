@@ -1,3 +1,7 @@
+import memuzin from "../assets/images/memuzinposter.png";
+import damdadelivar from "../assets/images/damdadelivar.png";
+import tomris from "../assets/images/tomris.png";
+
 export const routes = [
   {
     path: '/',
@@ -161,3 +165,23 @@ export const footerLinks = [
   }
 ]
 
+export const projects = [
+  {
+    id: 1,
+    name: "Memuzin",
+    image: memuzin,
+    width: 200,
+  },
+  {
+    id: 2,
+    name: "Damda deLi var",
+    image: damdadelivar,
+    width: 200,
+  },
+  {
+    id: 3,
+    name: "Tomris",
+    image: tomris,
+    width: 200,
+  },
+];
