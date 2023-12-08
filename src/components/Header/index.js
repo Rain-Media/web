@@ -25,16 +25,14 @@ function Header() {
   },[open]);
   
   return (
-    <div className="relative h-[400px] md:h-screen md:max-h-[135px] overflow-hidden">
-      <header className={`flex justify-between items-center w-full p-6 ${ router === '/' || router === '/about-us' ? 'absolute z-20 bg-transparent' : 'bg-black' }`}>
+    <div className="relative overflow-hidden">
+      <header className={`flex justify-between items-center w-full p-6 bg-black`}>
         <Image src={logo} alt="logo" width={100} height='auto'/>
         <div className={`flex gap-x-6 pr-10`}>
           <Navigation/>
           <div className="text-white font-bold">TR</div>
         </div>
       </header>
-      { router === '/' && <Swiper/> }
-      { router === '/about-us' && <Background src={backOur}/> }
     </div>
   );
 }
