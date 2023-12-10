@@ -4,7 +4,8 @@ export const projectContentSlice = createSlice({
   name: 'project-content',
   initialState: {
     currentTab: '',
-    selectedTab: 'topic'
+    selectedTab: 'topic',
+    currentlyData: null
   },
   reducers: {
     setCurrentlyTab: (state, action) => {
@@ -12,9 +13,12 @@ export const projectContentSlice = createSlice({
     },
     setSelectedTab: (state, action) => {
       state.selectedTab = action.payload;
+    },
+    setCurrentlyData: ( state, action ) => {
+      state.currentlyData = action.payload
     }
   }
 });
 
-export const { setCurrentlyTab, setSelectedTab } = projectContentSlice.actions;
+export const { setCurrentlyTab, setSelectedTab, setCurrentlyData } = projectContentSlice.actions;
 export default projectContentSlice.reducer;

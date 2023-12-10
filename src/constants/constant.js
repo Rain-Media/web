@@ -168,20 +168,41 @@ export const footerLinks = [
 export const projects = [
   {
     id: 1,
+    slug: "memuzin",
     name: "Memuzin",
     image: memuzin,
     width: 200,
   },
   {
     id: 2,
+    slug: "damdadelivar",
     name: "Damda deLi var",
     image: damdadelivar,
     width: 200,
   },
   {
     id: 3,
+    slug: "tomris",
     name: "Tomris",
     image: tomris,
     width: 200,
   },
 ];
+
+export const contents = [
+  {
+    name: "memuzin",
+    poster: tomris,
+    slogan: "Yalnızlığımdır Özgürlüğümün Bedeli"
+  },
+  {
+    name: "tomris",
+    poster: tomris,
+    slogan: "Yalnızlığımdır Özgürlüğümün Bedeli"
+  },
+  {
+    name: "damdadelivar",
+    poster: tomris,
+    slogan: "Yalnızlığımdır Özgürlüğümün Bedeli"
+  }
+]

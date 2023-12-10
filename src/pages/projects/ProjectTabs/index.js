@@ -12,7 +12,7 @@ function ProjectTabs() {
   
   const handleTabClick = (index) => {
     setActiveTab(index);
-    dispatch( setCurrentlyTab( projects.find( item => item.id === (index + 1) ).name ))
+    dispatch( setCurrentlyTab( projects.find( item => item.id === (index + 1) ).slug ))
   };
   
   return (
