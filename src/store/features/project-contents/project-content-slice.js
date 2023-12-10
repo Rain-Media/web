@@ -3,7 +3,7 @@ import { createSlice } from "@reduxjs/toolkit";
 export const projectContentSlice = createSlice({
   name: 'project-content',
   initialState: {
-    currentTab: '',
+    currentTab: 'memuzin',
     selectedTab: 'topic',
     currentlyData: null
   },

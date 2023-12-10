@@ -198,7 +198,10 @@ export const contents = [
   {
     name: "tomris",
     poster: tomris,
-    slogan: "Yalnızlığımdır Özgürlüğümün Bedeli"
+    slogan: "Yalnızlığımdır Özgürlüğümün Bedeli",
+    description: 'Parlak zekasına rağmen duygusal karmaşaları ile mücadele eden akıl hastanesindeki bir kadının kendini Türk edebiyat dünyasının kendine özgü, cesur, güçlü ve özgür kalemlerinden Tomris Uyar’da aramasını konu edinen tek kişilik tiyatro oyunu “Tomris"',
+    highlight: "Tarihin karanlık sayfalarında kaybolan bir kadının hikayesi.",
+    summary: "Bu bir kadın hikayesidir… Ama sadece kadınlarla ilgili değildir.Türk edebiyat dünyasının kendine özgü, cesur, güçlü ve özgür kalemlerinden Tomris Uyar’ın yaşamından ilhamla kaleme alınan oyunda; akıl hastanesindeki bir kadının kendini Tomris Uyar’da arayışı anlatılıyor.Oyun boyunca parlak zekasına şahit olduğumuz akıl hastanesindeki sözde “Tomris Uyar”; ilişki, aşk, evlilik kavramlarını Tomris Uyar’ın hayatından kesitlerle sorgularken kadına ve kadının toplumdaki yerine dair çok önemli mesajlar da veriyor."
   },
   {
     name: "damdadelivar",

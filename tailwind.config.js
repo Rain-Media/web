@@ -9,7 +9,12 @@ module.exports = {
     "./src/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: {
+        playfair: ['Playfair Display', 'serif'],
+        lato: ['Lato', 'sans-serif']
+      },
+    },
     screens: {
       'sm': '640px',
       // => @media (min-width: 640px) { ... }

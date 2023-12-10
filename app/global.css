@@ -21,3 +21,15 @@ body {
 .swiper-button-prev:after, .swiper-button-next:after {
     color: white;
 }
+
+/* styles/globals.css */
+.font-playfair {
+    font-family: 'playfair', serif;
+}
+
+.font-lato {
+    font-family: 'Lato', sans-serif;
+}
+
+
+

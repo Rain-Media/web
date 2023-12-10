@@ -12,7 +12,7 @@ function Page(props) {
   
   useEffect( () => {
     if( currentTab === '' ) {
-      dispatch( setCurrentlyTab( projects.find( item => item.id === 1 ).name ))
+      dispatch( setCurrentlyTab( projects.find( item => item.id === 1 ).slug ))
     }
   },[])
   
