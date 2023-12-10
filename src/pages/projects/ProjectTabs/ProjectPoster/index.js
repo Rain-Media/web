@@ -1,5 +1,5 @@
 import React from 'react';
-import ImageResize from "../../components/Shared/ImageResize";
+import ImageResize from "../../../../components/Shared/ImageResize";
 
 function ProjectPoster({ src, alt, width }) {
   

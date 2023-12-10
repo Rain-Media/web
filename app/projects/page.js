@@ -1,6 +1,6 @@
 "use client"
 import React,{useEffect} from 'react';
-import ProjectTabs from "../../src/pages/projects/project-tabs";
+import ProjectTabs from "../../src/pages/projects/ProjectTabs";
 import {useDispatch, useSelector} from "react-redux";
 import {setCurrentlyTab} from "../../src/store/features/project-contents/project-content-slice";
 import {projects} from "../../src/constants/constant";

@@ -1,11 +1,11 @@
 "use client"
 import React, {useState} from 'react';
-import ProjectPoster from "./project-poster";
-import {useDispatch, useSelector} from "react-redux";
-import {setCurrentlyTab} from "../../store/features/project-contents/project-content-slice";
-import {projects} from "../../constants/constant";
+import ProjectPoster from "./ProjectPoster";
+import {useDispatch} from "react-redux";
+import {setCurrentlyTab} from "../../../store/features/project-contents/project-content-slice";
+import {projects} from "../../../constants/constant";
 
-function ProjectTabs(props) {
+function ProjectTabs() {
   const [activeTab, setActiveTab] = useState(0);
   const activeProjectWidth = 280;
   const dispatch = useDispatch();
