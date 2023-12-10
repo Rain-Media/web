@@ -1,7 +1,14 @@
 import React from 'react';
+import ProjectContentButtons from "../ProjectContentButtons";
 
 const ProjectTopic = (props) => (
-  <>Topic</>
+  <div>
+    <div></div>
+    <div>
+      <ProjectContentButtons/>
+    </div>
+    <div></div>
+  </div>
 );
 
 export default ProjectTopic;
