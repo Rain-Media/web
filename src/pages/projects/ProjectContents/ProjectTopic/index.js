@@ -7,7 +7,7 @@ import {selectCurrentProjectData} from "../../../../utils/projects";
 import {contents} from "../../../../constants/constant";
 
 const ProjectTopic = () => {
-  const {currentlyData,currentTab} = useSelector( state => state.projectContent );
+  const { currentlyData, currentTab } = useSelector( state => state.projectContent );
   const dispatch = useDispatch();
   
   useEffect( () => {

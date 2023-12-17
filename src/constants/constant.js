@@ -193,7 +193,20 @@ export const contents = [
   {
     name: "memuzin",
     poster: tomris,
-    slogan: "Yalnızlığımdır Özgürlüğümün Bedeli"
+    slogan: "",
+    description: `Mem û Zîn Operası, 17. yüzyılda Ehmedê Xanî tarafından kaleme alınan ve Kürt edebiyatında önemli bir yere sahip olan trajik aşk destanı "Mem û Zîn"in operaya dönüştürülmüş bir yorumudur. Bu eser, kimi evrensel temalarıyla Shakespeare'in "Romeo ve Juliet" hikayesine benzerlikler gösterir; aşkın saf gücünü, tutkunun derinliğini, feodal toplum yapısının getirdiği zorlukları ve adaletsizliklerin gölgesindeki direnci merkezine alır.
+      Kürt kültürüne ve tarihine dair derin bir anlayış sunan bu eser; aşkın, aile ve toplumsal baskıların gölgesinde nasıl bir yol izlediğini, tutkunun ve fedakarlığın sınırlarını ve bu sınırların aşk uğruna nasıl zorlandığını irdeler. Operanın, bu efsanevi hikayeyi sahnelemesi, hem Kürt kültürünün evrenselliğini vurgulamakta hem de aşkın ve insan ruhunun kırılganlığının, farklı kültürlerde ve zaman dilimlerinde nasıl benzer temalarla işlendiğini göstermektedir.
+      Mem û Zîn Operası, yalnızca dünyada sahnelenen ilk Kürtçe opera olmasıyla değil, aynı zamanda kültürümüzün köklü geçmişini, değerli edebiyatını ve dinamik kültürel yapısını evrensel bir platforma taşıma kapasitesiyle dikkat çeker. Kürt dilinin ritmik ve melodik zenginliklerini tüm dünyaya sunarak, kültürel çeşitliliği ve dilsel derinliği vurgulayan bu eser, tüm dünyada sanatseverlerin ilgisini çekme potansiyeline sahiptir.`,
+    highlight: "",
+    summary: `Mem û Zîn Operası, 17. yüzyılda Ehmedê Xanî tarafından kaleme alınan ve Kürt edebiyatında önemli bir yere sahip olan trajik aşk destanı "Mem û Zîn"in operaya dönüştürülmüş bir yorumudur. Bu eser, kimi evrensel temalarıyla Shakespeare'in "Romeo ve Juliet" hikayesine benzerlikler gösterir; aşkın saf gücünü, tutkunun derinliğini, feodal toplum yapısının getirdiği zorlukları ve adaletsizliklerin gölgesindeki direnci merkezine alır.
+      Kürt kültürüne ve tarihine dair derin bir anlayış sunan bu eser; aşkın, aile ve toplumsal baskıların gölgesinde nasıl bir yol izlediğini, tutkunun ve fedakarlığın sınırlarını ve bu sınırların aşk uğruna nasıl zorlandığını irdeler. Operanın, bu efsanevi hikayeyi sahnelemesi, hem Kürt kültürünün evrenselliğini vurgulamakta hem de aşkın ve insan ruhunun kırılganlığının, farklı kültürlerde ve zaman dilimlerinde nasıl benzer temalarla işlendiğini göstermektedir.
+      Mem û Zîn Operası, yalnızca dünyada sahnelenen ilk Kürtçe opera olmasıyla değil, aynı zamanda kültürümüzün köklü geçmişini, değerli edebiyatını ve dinamik kültürel yapısını evrensel bir platforma taşıma kapasitesiyle dikkat çeker. Kürt dilinin ritmik ve melodik zenginliklerini tüm dünyaya sunarak, kültürel çeşitliliği ve dilsel derinliği vurgulayan bu eser, tüm dünyada sanatseverlerin ilgisini çekme potansiyeline sahiptir.`,
+    gallery: [
+      {
+        src: '',
+        alt: ''
+      }
+    ]
   },
   {
     name: "tomris",
@@ -206,6 +219,8 @@ export const contents = [
   {
     name: "damdadelivar",
     poster: tomris,
-    slogan: "Yalnızlığımdır Özgürlüğümün Bedeli"
+    slogan: "Damda Deli Var",
+    summary: `“Damda Deli Var" Müzikali, Orostopontopolis adında kurgusal bir ülkede yaşanan politik, ekonomik ve sosyal olayları mizahi bir dille sahneye taşıyor. Aziz Nesin'in aynı adlı eserinden esinlenen bu iki perdelik müzikli oyun, damdaki bir delinin muhtarlıktan imparatorluğa kadar yükselme cüretini ele alarak, ince esprilerle harmanlanmış eleştirilerle izleyicisini hem güldürüyor hem de düşündürüyor.`,
+    description: `“Damda Deli Var" Müzikali, Orostopontopolis adında kurgusal bir ülkede yaşanan politik, ekonomik ve sosyal olayları mizahi bir dille sahneye taşıyor. Aziz Nesin'in aynı adlı eserinden esinlenen bu iki perdelik müzikli oyun, damdaki bir delinin muhtarlıktan imparatorluğa kadar yükselme cüretini ele alarak, ince esprilerle harmanlanmış eleştirilerle izleyicisini hem güldürüyor hem de düşündürüyor.`,
   }
 ]
