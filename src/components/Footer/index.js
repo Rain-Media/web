@@ -1,6 +1,6 @@
 import React from 'react';
 import {footerLinks} from "/src/constants/constant";
-import Route from "./Route";
+import Route from "./Route/Route";
 
 Footer.propTypes = {
 

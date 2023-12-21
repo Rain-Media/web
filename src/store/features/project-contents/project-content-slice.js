@@ -3,13 +3,13 @@ import { createSlice } from "@reduxjs/toolkit";
 export const projectContentSlice = createSlice({
   name: 'project-content',
   initialState: {
-    currentTab: 'memuzin',
+    currentProject: 'memuzin',
     selectedTab: 'topic',
     currentlyData: null
   },
   reducers: {
-    setCurrentlyTab: (state, action) => {
-      state.currentTab = action.payload;
+    setCurrentlyProject: (state, action) => {
+      state.currentProject = action.payload;
     },
     setSelectedTab: (state, action) => {
       state.selectedTab = action.payload;
@@ -20,5 +20,5 @@ export const projectContentSlice = createSlice({
   }
 });
 
-export const { setCurrentlyTab, setSelectedTab, setCurrentlyData } = projectContentSlice.actions;
+export const { setCurrentlyProject, setSelectedTab, setCurrentlyData } = projectContentSlice.actions;
 export default projectContentSlice.reducer;

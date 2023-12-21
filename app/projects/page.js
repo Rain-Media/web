@@ -8,11 +8,11 @@ import ProjectContents from "../../src/pages/projects/ProjectContents";
 
 function Page(props) {
   const dispatch = useDispatch();
-  const { currentTab } = useSelector( state => state.projectContent )
+  const { currentProject } = useSelector( state => state.projectContent )
   
   useEffect( () => {
-    if( currentTab === '' ) {
-      dispatch( setCurrentlyTab( projects.find( item => item.id === 1 ).slug ))
+    if( currentProject === '' ) {
+      dispatch( setCurrentlyProject( projects.find( item => item.id === 1 ).slug ))
     }
   },[])
   

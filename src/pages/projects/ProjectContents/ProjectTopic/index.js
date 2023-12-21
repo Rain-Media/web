@@ -7,14 +7,14 @@ import {selectCurrentProjectData} from "../../../../utils/projects";
 import {contents} from "../../../../constants/constant";
 
 const ProjectTopic = () => {
-  const { currentlyData, currentTab } = useSelector( state => state.projectContent );
+  const { currentlyData, currentProject } = useSelector( state => state.projectContent );
   const dispatch = useDispatch();
   
   useEffect( () => {
-    if( currentTab ) {
-      dispatch( setCurrentlyData( selectCurrentProjectData( contents, currentTab )));
+    if( currentProject ) {
+      dispatch( setCurrentlyData( selectCurrentProjectData( contents, currentProject )));
     }
-  },[ currentTab ]);
+  },[ currentProject ]);
   
   return(
   <div className="w-full flex">

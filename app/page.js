@@ -1,5 +1,5 @@
 import {footerLinks} from "../src/constants/constant";
-import Route from "../src/components/Footer/Route";
+import Route from "../src/components/Footer/Route/Route";
 import Image from "next/image";
 import opera from "../src/assets/images/opera.png";
 
