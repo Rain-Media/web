@@ -34,7 +34,7 @@ function Page(props) {
               className="bg-transparent border-b block mb-10 w-full md:w-96"
               type="text"
               id="mail"
-              name="name"
+              name="mail"
               required
               placeholder="Mail Adresiniz"
             />
@@ -42,7 +42,7 @@ function Page(props) {
               className="bg-transparent border-b block mb-10 w-full md:w-96"
               type="text"
               id="message"
-              name="name"
+              name="message"
               required
               placeholder="Mesajınız"
             />
