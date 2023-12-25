@@ -73,6 +73,10 @@ export const footerLinks = [
       }
     ]
   },
+
+]
+
+export const socialIcons = [
   {
     name: 'Sosyal Medya',
     links: [
