@@ -3,16 +3,11 @@ import mail from "../../src/assets/images/mail.svg";
 import location from "../../src/assets/images/location.svg";
 import phone from "../../src/assets/images/phone.svg";
 import Image from "next/image";
-import { footerLinks } from "../../src/constants/constant";
-import Link from "next/link";
+import SocialLinks from "../../src/components/Shared/SocialLinks";
 
 Page.propTypes = {};
 
 function Page(props) {
-  const socialLinks = footerLinks.filter((item) =>
-    item.name.includes("Sosyal")
-  );
-  //console.log(socialLinks);
   return (
     <div className="bg-[#1C1C1C] min-h-screen">
       <div className="flex flex-col-reverse items-center lg:flex-row justify-center gap-20 lg:gap-40 pt-16 md:pt-24 lg:pt-40 relative px-3">
@@ -86,15 +81,7 @@ function Page(props) {
                 </a>
               </div>
             </div>
-            <div className="flex gap-3 justify-center">
-              {socialLinks[0].links.map((link, index) => {
-                return (
-                  <Link href={link.to} key={index} className="text-[#1C1C1C]">
-                    {link.name}
-                  </Link>
-                );
-              })}
-            </div>
+            <SocialLinks />
           </div>
         </div>
       </div>
