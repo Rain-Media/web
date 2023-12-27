@@ -1,6 +1,12 @@
 import memuzin from "../assets/images/memuzinposter.png";
 import damdadelivar from "../assets/images/damdadelivar.png";
 import tomris from "../assets/images/tomris.png";
+import about1 from "../assets/images/about-1.png"
+import about2 from "../assets/images/about-2.png"
+import about3 from "../assets/images/about-3.png"
+import about4 from "../assets/images/about-4.png"
+import about5 from "../assets/images/about-5.png"
+import about6 from "../assets/images/about-6.png"
 
 export const routes = [
   {
@@ -226,5 +232,26 @@ export const contents = [
     slogan: "Damda Deli Var",
     summary: `“Damda Deli Var" Müzikali, Orostopontopolis adında kurgusal bir ülkede yaşanan politik, ekonomik ve sosyal olayları mizahi bir dille sahneye taşıyor. Aziz Nesin'in aynı adlı eserinden esinlenen bu iki perdelik müzikli oyun, damdaki bir delinin muhtarlıktan imparatorluğa kadar yükselme cüretini ele alarak, ince esprilerle harmanlanmış eleştirilerle izleyicisini hem güldürüyor hem de düşündürüyor.`,
     description: `“Damda Deli Var" Müzikali, Orostopontopolis adında kurgusal bir ülkede yaşanan politik, ekonomik ve sosyal olayları mizahi bir dille sahneye taşıyor. Aziz Nesin'in aynı adlı eserinden esinlenen bu iki perdelik müzikli oyun, damdaki bir delinin muhtarlıktan imparatorluğa kadar yükselme cüretini ele alarak, ince esprilerle harmanlanmış eleştirilerle izleyicisini hem güldürüyor hem de düşündürüyor.`,
+  }
+]
+
+export const aboutUsSliderItems = [
+  {
+    imgSrc: about1
+  },
+  {
+    imgSrc: about2
+  },
+  {
+    imgSrc: about3
+  },
+  {
+    imgSrc: about4
+  },
+  {
+    imgSrc: about5
+  },
+  {
+    imgSrc: about6
   }
 ]
