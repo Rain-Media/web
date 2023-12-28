@@ -58,7 +58,7 @@ function Page(props) {
             <div className="space-y-3 mb-5 md:pl-32">
               <div className="flex gap-3 items-center">
                 <div>
-                  <Image src={mail} width={32} height={32} />
+                  <Image src={mail} width={32} height={32} alt="mail" />
                 </div>
                 <a href="mailto:info@rainmedia.org" className="font-light">
                   info@rainmedia.org
@@ -66,7 +66,7 @@ function Page(props) {
               </div>
               <div className="flex gap-3 items-center">
                 <div>
-                  <Image src={location} width={32} height={32} />
+                  <Image src={location} width={32} height={32} alt="location" />
                 </div>
                 <div className="font-light">
                   Susam sok 28/2 Cihangir/İstanbul
@@ -74,7 +74,7 @@ function Page(props) {
               </div>
               <div className="flex gap-3 items-center">
                 <div>
-                  <Image src={phone} width={32} height={32} />
+                  <Image src={phone} width={32} height={32} alt="phone" />
                 </div>
                 <a href="tel:+902128432875" className="font-light">
                   +90 212 843 28 75

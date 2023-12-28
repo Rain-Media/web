@@ -5,6 +5,7 @@ import { useWindowSize } from "../../hooks/useWindowSize";
 import MobileNavigation from "./MobileNavigation";
 import { useDispatch } from "react-redux";
 import { setOpen } from "../../store/features/hamburger-menu/hamburgerSlice";
+import MenuItems from "./MenuItems";
 
 function Navigation() {
   const window = useWindowSize();
@@ -12,13 +13,7 @@ function Navigation() {
 
   return (
     <nav className={`flex gap-x-6`}>
-      <div className="gap-x-14 box-border text-white hidden md:flex">
-        {routes.map((route, index) => (
-          <Link href={route.path} key={index}>
-            {route.name}
-          </Link>
-        ))}
-      </div>
+      <MenuItems />
       <div
         className={`text-white md:hidden`}
         onClick={() => dispatch(setOpen())}
@@ -50,3 +45,9 @@ export default Navigation;
                 <path strokeLinecap="round" strokeLinejoin="round" d="M3.75 9h16.5m-16.5 6.75h16.5" />
               </svg>
             </div>*/
+
+/* {routes.map((route, index) => (
+          <Link href={route.path} key={index}>
+            {route.name}
+          </Link>
+        ))}*/

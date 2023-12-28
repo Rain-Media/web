@@ -5,20 +5,24 @@ import { teamMembers } from "../../src/constants/constant";
 import Image from "next/image";
 import aboutUsHeadingImage from "../../src/assets/images/about-us-heading-image.png";
 import AboutUsSlider from "../../src/pages/about-us/AboutUsSlider";
+import { aboutUsTextContent } from "../../src/constants/constant";
 
 function Page(props) {
   return (
     <div className="bg-[#1C1C1C] pb-5 md:pb-10">
       <div className="relative w-full h-[609px] flex items-center justify-center">
-        <Image className="object-cover" src={aboutUsHeadingImage} fill={true} />
+        <Image
+          className="object-cover"
+          src={aboutUsHeadingImage}
+          fill={true}
+          alt="about us heading image"
+        />
         <div className="relative z-10 text-center text-white">
-          <h2 className="font-bold text-5xl mb-10">Rain Media</h2>
+          <h2 className="font-bold text-5xl mb-10">
+            {aboutUsTextContent[0].heading}
+          </h2>
           <p className="max-w-[673px] text-xl">
-            Rain Media, sanatın büyüsünü seyircilerine taşıma misyonuyla yola
-            çıkan; farkını yaratıcılık, tutku ve cesaret ile sergileyen, her
-            projede sıradanın ötesine geçmeyi hedefleyen, izleyicilerine farklı
-            ve akılda kalıcı deneyimler sunmak için yenilikçi yaklaşımlar
-            benimseyen genç ve dinamik bir medya şirketidir.
+            {aboutUsTextContent[0].description}
           </p>
         </div>
       </div>

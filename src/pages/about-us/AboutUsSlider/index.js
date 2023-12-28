@@ -4,7 +4,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/pagination";
 import { Pagination, Autoplay } from "swiper/modules";
-import {aboutUsSliderItems} from "../../../constants/constant"
+import { aboutUsSliderItems } from "../../../constants/constant";
 import Image from "next/image";
 
 export default function AboutUsSlider() {
@@ -16,37 +16,26 @@ export default function AboutUsSlider() {
         pagination={{
           clickable: true,
         }}
-         autoplay={{
+        autoplay={{
           delay: 2500,
           disableOnInteraction: false,
         }}
-         breakpoints={{
+        breakpoints={{
           768: {
             slidesPerView: 3,
           },
-          
         }}
         modules={[Autoplay]}
         className="mySwiper"
       >
-        {aboutUsSliderItems.map((image,index)=> {
+        {aboutUsSliderItems.map((image, index) => {
           return (
             <SwiperSlide key={index}>
-              <Image src={image.imgSrc} width={800} height={800}/>
+              <Image src={image.imgSrc} width={800} height={800} alt={index} />
             </SwiperSlide>
-          )
+          );
         })}
-       
       </Swiper>
     </>
   );
 }
-
-/* <SwiperSlide>Slide 2</SwiperSlide>
-        <SwiperSlide>Slide 3</SwiperSlide>
-        <SwiperSlide>Slide 4</SwiperSlide>
-        <SwiperSlide>Slide 5</SwiperSlide>
-        <SwiperSlide>Slide 6</SwiperSlide>
-        <SwiperSlide>Slide 7</SwiperSlide>
-        <SwiperSlide>Slide 8</SwiperSlide>
-        <SwiperSlide>Slide 9</SwiperSlide>*/

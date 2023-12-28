@@ -69,6 +69,7 @@ const ProjectGallery = (props) => {
                 width={600}
                 height={550}
                 src="https://swiperjs.com/demos/images/nature-1.jpg"
+                alt="image"
               />
             </SwiperSlide>
             <SwiperSlide className="!w-[600px] !h-[550px]">
@@ -76,6 +77,7 @@ const ProjectGallery = (props) => {
                 width={600}
                 height={550}
                 src="https://swiperjs.com/demos/images/nature-2.jpg"
+                alt="image"
               />
             </SwiperSlide>
             <SwiperSlide className="!w-[600px] !h-[550px]">
@@ -83,6 +85,7 @@ const ProjectGallery = (props) => {
                 width={600}
                 height={550}
                 src="https://swiperjs.com/demos/images/nature-3.jpg"
+                alt="image"
               />
             </SwiperSlide>
             <SwiperSlide className="!w-[600px] !h-[550px]">
@@ -90,6 +93,7 @@ const ProjectGallery = (props) => {
                 width={600}
                 height={550}
                 src="https://swiperjs.com/demos/images/nature-4.jpg"
+                alt="image"
               />
             </SwiperSlide>
             <SwiperSlide className="!w-[600px] !h-[550px]">
@@ -97,6 +101,7 @@ const ProjectGallery = (props) => {
                 width={600}
                 height={500}
                 src="https://swiperjs.com/demos/images/nature-5.jpg"
+                alt="image"
               />
             </SwiperSlide>
             <SwiperSlide className="!w-[600px] !h-[550px]">
@@ -104,6 +109,7 @@ const ProjectGallery = (props) => {
                 width={600}
                 height={550}
                 src="https://swiperjs.com/demos/images/nature-6.jpg"
+                alt="image"
               />
             </SwiperSlide>
             <SwiperSlide className="!w-[600px] !h-[550px]">
@@ -111,6 +117,7 @@ const ProjectGallery = (props) => {
                 width={600}
                 height={550}
                 src="https://swiperjs.com/demos/images/nature-7.jpg"
+                alt="image"
               />
             </SwiperSlide>
             <SwiperSlide className="!w-[600px] !h-[550px]">

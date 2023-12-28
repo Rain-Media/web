@@ -255,3 +255,10 @@ export const aboutUsSliderItems = [
     imgSrc: about6
   }
 ]
+
+export const aboutUsTextContent = [
+  {
+    heading: "Rain Media",
+    description: " Rain Media, sanatın büyüsünü seyircilerine taşıma misyonuyla yola çıkan; farkını yaratıcılık, tutku ve cesaret ile sergileyen, her projede sıradanın ötesine geçmeyi hedefleyen, izleyicilerine farklı ve akılda kalıcı deneyimler sunmak için yenilikçi yaklaşımlar benimseyen genç ve dinamik bir medya şirketidir."
+  }
+]
