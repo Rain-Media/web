@@ -17,7 +17,7 @@ function ProjectTabs() {
     );
   };
 
-  console.log(activeTab);
+  console.log(activeTab, "activeeeee");
 
   return (
     <div className="flex items-center justify-center">

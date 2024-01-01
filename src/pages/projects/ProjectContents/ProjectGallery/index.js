@@ -5,13 +5,30 @@ import { SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/effect-coverflow";
 import "swiper/css/pagination";
-import { EffectCoverflow, Pagination } from "swiper/modules";
+import { Autoplay, EffectCoverflow, Pagination } from "swiper/modules";
 import Image from "next/image";
+import { projectGalleryImages } from "../../../../constants/constant";
+import { useDispatch, useSelector } from "react-redux";
+import { setCurrentlyData } from "../../../../store/features/project-contents/project-content-slice";
+import { selectCurrentProjectData } from "../../../../utils/projects";
+import { contents } from "../../../../constants/constant";
 
 const ProjectGallery = (props) => {
   const [projects, setProjects] = useState([]);
+  const { currentlyData, currentProject } = useSelector(
+    (state) => state.projectContent
+  );
+  const dispatch = useDispatch();
 
   useEffect(() => {
+    if (currentProject) {
+      dispatch(
+        setCurrentlyData(selectCurrentProjectData(contents, currentProject))
+      );
+    }
+  }, [currentProject]);
+
+  /*useEffect(() => {
     const fetchData = async () => {
       const response = await fetch(
         "http://localhost:1337/api/projects?populate=*",
@@ -26,15 +43,15 @@ const ProjectGallery = (props) => {
     };
 
     fetchData();
-  }, []);
+  }, []);*/
 
   console.log(projects, "yeah");
 
   return (
     <>
       <ProjectContentButtons />
-      <div className="flex pt-14">
-        <div className="basis-1/3">
+      <div className="lg:flex pt-14 gap-20">
+        <div className="basis-1/3 hidden lg:block">
           <p className="mb-10">
             Lorem, ipsum dolor sit amet consectetur adipisicing elit. Totam
             officia, tempore incidunt laborum similique atque officiis magni ea
@@ -60,11 +77,39 @@ const ProjectGallery = (props) => {
               modifier: 1,
               slideShadows: true,
             }}
+            autoplay={{
+              delay: 2500,
+              disableOnInteraction: false,
+            }}
             pagination={true}
-            modules={[EffectCoverflow]}
+            modules={[EffectCoverflow, Autoplay]}
             className="mySwiper"
           >
-            <SwiperSlide className="!w-[600px] !h-[550px] -ml-52">
+            {currentlyData.gallery[0].src.map((data, index) => {
+              return (
+                <SwiperSlide
+                  key={index}
+                  className="!w-[500px] xl:!w-[600px] !h-[450px] xl:!h-[550px] -ml"
+                >
+                  <Image
+                    fill={true}
+                    src={data}
+                    alt="image"
+                    className="object-contain lg:object-cover"
+                  />
+                </SwiperSlide>
+              );
+            })}
+          </Swiper>
+        </div>
+      </div>
+    </>
+  );
+};
+
+export default ProjectGallery;
+
+/* <SwiperSlide className="!w-[600px] !h-[550px] -ml-52">
               <Image
                 width={600}
                 height={550}
@@ -133,12 +178,4 @@ const ProjectGallery = (props) => {
                 height={550}
                 src="https://swiperjs.com/demos/images/nature-9.jpg"
               />
-            </SwiperSlide>
-          </Swiper>
-        </div>
-      </div>
-    </>
-  );
-};
-
-export default ProjectGallery;
+            </SwiperSlide>*/

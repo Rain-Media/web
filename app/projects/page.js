@@ -17,7 +17,7 @@ function Page(props) {
   },[])
   
   return (
-    <div className="bg-[#1C1C1C]">
+    <div className="bg-[#1C1C1C] pt-32 lg:pt-40">
       <ProjectTabs />
       <ProjectContents/>
     </div>

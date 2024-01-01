@@ -7,6 +7,26 @@ import about3 from "../assets/images/about-3.png"
 import about4 from "../assets/images/about-4.png"
 import about5 from "../assets/images/about-5.png"
 import about6 from "../assets/images/about-6.png"
+import tomrisImage from "../assets/images/tomris/aksam_gazetesi.PNG"
+import tomrisImage2 from "../assets/images/tomris/anayurt_gazetesi.PNG"
+import tomrisImage3 from "../assets/images/tomris/yazili_basin.JPG"
+import tomrisImage4 from "../assets/images/tomris/yazili_basin_2.JPG"
+import tomrisImage5 from "../assets/images/tomris/yazili_basin_3.JPG"
+import damdaImage from "../assets/images/damdadelivar/damda.png"
+import damdaImage2 from "../assets/images/damdadelivar/damda2.jpg"
+import damdaImage3 from "../assets/images/damdadelivar/damda3.png"
+import damdaImage4 from "../assets/images/damdadelivar/damda4.png"
+import damdaImage5 from "../assets/images/damdadelivar/damda5.jpeg"
+import damdaImage6 from "../assets/images/damdadelivar/damda6.png"
+import memuzinImage from "../assets/images/memuzin/memuzin.jpg"
+import memuzinImage2 from "../assets/images/memuzin/memuzin2.jpeg"
+import memuzinImage3 from "../assets/images/memuzin/memuzin3.jpg"
+import memuzinImage4 from "../assets/images/memuzin/memuzin4.jpg"
+import memuzinImage5 from "../assets/images/memuzin/memuzin5.JPG"
+import memuzinImage6 from "../assets/images/memuzin/memuzin6.jpg"
+import memuzinImage7 from "../assets/images/memuzin/memuzin7.jpg"
+import memuzinImage8 from "../assets/images/memuzin/memuzin8.jpg"
+import memuzinImage9 from "../assets/images/memuzin/memuzin9.jpg"
 
 export const routes = [
   {
@@ -202,7 +222,7 @@ export const projects = [
 export const contents = [
   {
     name: "memuzin",
-    poster: tomris,
+    poster: memuzin,
     slogan: "",
     description: `Mem û Zîn Operası, 17. yüzyılda Ehmedê Xanî tarafından kaleme alınan ve Kürt edebiyatında önemli bir yere sahip olan trajik aşk destanı "Mem û Zîn"in operaya dönüştürülmüş bir yorumudur. Bu eser, kimi evrensel temalarıyla Shakespeare'in "Romeo ve Juliet" hikayesine benzerlikler gösterir; aşkın saf gücünü, tutkunun derinliğini, feodal toplum yapısının getirdiği zorlukları ve adaletsizliklerin gölgesindeki direnci merkezine alır.
       Kürt kültürüne ve tarihine dair derin bir anlayış sunan bu eser; aşkın, aile ve toplumsal baskıların gölgesinde nasıl bir yol izlediğini, tutkunun ve fedakarlığın sınırlarını ve bu sınırların aşk uğruna nasıl zorlandığını irdeler. Operanın, bu efsanevi hikayeyi sahnelemesi, hem Kürt kültürünün evrenselliğini vurgulamakta hem de aşkın ve insan ruhunun kırılganlığının, farklı kültürlerde ve zaman dilimlerinde nasıl benzer temalarla işlendiğini göstermektedir.
@@ -213,7 +233,7 @@ export const contents = [
       Mem û Zîn Operası, yalnızca dünyada sahnelenen ilk Kürtçe opera olmasıyla değil, aynı zamanda kültürümüzün köklü geçmişini, değerli edebiyatını ve dinamik kültürel yapısını evrensel bir platforma taşıma kapasitesiyle dikkat çeker. Kürt dilinin ritmik ve melodik zenginliklerini tüm dünyaya sunarak, kültürel çeşitliliği ve dilsel derinliği vurgulayan bu eser, tüm dünyada sanatseverlerin ilgisini çekme potansiyeline sahiptir.`,
     gallery: [
       {
-        src: '',
+        src: [memuzinImage,memuzinImage2,memuzinImage3,memuzinImage4,memuzinImage5,memuzinImage6,memuzinImage7,memuzinImage8,memuzinImage9],
         alt: ''
       }
     ]
@@ -224,14 +244,26 @@ export const contents = [
     slogan: "Yalnızlığımdır Özgürlüğümün Bedeli",
     description: 'Parlak zekasına rağmen duygusal karmaşaları ile mücadele eden akıl hastanesindeki bir kadının kendini Türk edebiyat dünyasının kendine özgü, cesur, güçlü ve özgür kalemlerinden Tomris Uyar’da aramasını konu edinen tek kişilik tiyatro oyunu “Tomris"',
     highlight: "Tarihin karanlık sayfalarında kaybolan bir kadının hikayesi.",
-    summary: "Bu bir kadın hikayesidir… Ama sadece kadınlarla ilgili değildir.Türk edebiyat dünyasının kendine özgü, cesur, güçlü ve özgür kalemlerinden Tomris Uyar’ın yaşamından ilhamla kaleme alınan oyunda; akıl hastanesindeki bir kadının kendini Tomris Uyar’da arayışı anlatılıyor.Oyun boyunca parlak zekasına şahit olduğumuz akıl hastanesindeki sözde “Tomris Uyar”; ilişki, aşk, evlilik kavramlarını Tomris Uyar’ın hayatından kesitlerle sorgularken kadına ve kadının toplumdaki yerine dair çok önemli mesajlar da veriyor."
+    summary: "Bu bir kadın hikayesidir… Ama sadece kadınlarla ilgili değildir.Türk edebiyat dünyasının kendine özgü, cesur, güçlü ve özgür kalemlerinden Tomris Uyar’ın yaşamından ilhamla kaleme alınan oyunda; akıl hastanesindeki bir kadının kendini Tomris Uyar’da arayışı anlatılıyor.Oyun boyunca parlak zekasına şahit olduğumuz akıl hastanesindeki sözde “Tomris Uyar”; ilişki, aşk, evlilik kavramlarını Tomris Uyar’ın hayatından kesitlerle sorgularken kadına ve kadının toplumdaki yerine dair çok önemli mesajlar da veriyor.",
+     gallery: [
+      {
+        src: [tomrisImage,tomrisImage2,tomrisImage3,tomrisImage4,tomrisImage5],
+        alt: ''
+      }
+    ]
   },
   {
     name: "damdadelivar",
-    poster: tomris,
+    poster: damdadelivar,
     slogan: "Damda Deli Var",
     summary: `“Damda Deli Var" Müzikali, Orostopontopolis adında kurgusal bir ülkede yaşanan politik, ekonomik ve sosyal olayları mizahi bir dille sahneye taşıyor. Aziz Nesin'in aynı adlı eserinden esinlenen bu iki perdelik müzikli oyun, damdaki bir delinin muhtarlıktan imparatorluğa kadar yükselme cüretini ele alarak, ince esprilerle harmanlanmış eleştirilerle izleyicisini hem güldürüyor hem de düşündürüyor.`,
     description: `“Damda Deli Var" Müzikali, Orostopontopolis adında kurgusal bir ülkede yaşanan politik, ekonomik ve sosyal olayları mizahi bir dille sahneye taşıyor. Aziz Nesin'in aynı adlı eserinden esinlenen bu iki perdelik müzikli oyun, damdaki bir delinin muhtarlıktan imparatorluğa kadar yükselme cüretini ele alarak, ince esprilerle harmanlanmış eleştirilerle izleyicisini hem güldürüyor hem de düşündürüyor.`,
+     gallery: [
+      {
+        src: [damdaImage,damdaImage2,damdaImage3,damdaImage4,damdaImage5,damdaImage6],
+        alt: ''
+      }
+    ]
   }
 ]
 
@@ -260,5 +292,20 @@ export const aboutUsTextContent = [
   {
     heading: "Rain Media",
     description: " Rain Media, sanatın büyüsünü seyircilerine taşıma misyonuyla yola çıkan; farkını yaratıcılık, tutku ve cesaret ile sergileyen, her projede sıradanın ötesine geçmeyi hedefleyen, izleyicilerine farklı ve akılda kalıcı deneyimler sunmak için yenilikçi yaklaşımlar benimseyen genç ve dinamik bir medya şirketidir."
+  }
+]
+
+export const projectGalleryImages = [
+  {
+    projectName: "memuzin",
+    projectImages: [memuzinImage,memuzinImage2,memuzinImage3,memuzinImage4,memuzinImage5,memuzinImage6,memuzinImage7,memuzinImage8,memuzinImage9]
+  },
+  {
+    projectName: "damdadelivar",
+    projectImages: [damdaImage,damdaImage2,damdaImage3,damdaImage4,damdaImage5,damdaImage6]
+  },
+  {
+    projectName: "tomris",
+    projectImages: [tomrisImage,tomrisImage2,tomrisImage3,tomrisImage4,tomrisImage5]
   }
 ]
