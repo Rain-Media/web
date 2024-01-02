@@ -3,6 +3,7 @@ import Route from "../src/components/Footer/Route/Route";
 import Image from "next/image";
 import opera from "../src/assets/images/opera.png";
 import HomeVideo from "../src/components/HomeVideo";
+import SocialLinks from "../src/components/Shared/SocialLinks";
 
 export default function Page() {
   const socialLinks = footerLinks.filter((item) =>
@@ -12,6 +13,9 @@ export default function Page() {
   return (
     <div className="bg-[#1c1c1c]">
       <HomeVideo />
+      <div className="mt-10">
+        <SocialLinks />
+      </div>
       <div className="w-full flex justify-center py-6">
         {socialLinks.map((item, index) => {
           return (

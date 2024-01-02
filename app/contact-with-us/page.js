@@ -1,4 +1,5 @@
-import React from "react";
+"use client";
+import React, { useState } from "react";
 import mail from "../../src/assets/images/mail.svg";
 import location from "../../src/assets/images/location.svg";
 import phone from "../../src/assets/images/phone.svg";
@@ -8,42 +9,101 @@ import SocialLinks from "../../src/components/Shared/SocialLinks";
 Page.propTypes = {};
 
 function Page(props) {
+  const [nameInput, setNameInput] = useState("");
+  const [mailInput, setMailInput] = useState("");
+  const [descriptionInput, setDescriptionInput] = useState("");
+  const [nameCheck, setnameCheck] = useState(false);
+  const [emailCheck, setemailCheck] = useState(false);
+  const [descriptionCheck, setdescriptionCheck] = useState(false);
+
+  const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+  const isButtonDisabled = !(
+    nameInput.length > 0 &&
+    emailRegex.test(mailInput) &&
+    descriptionInput.length > 0
+  );
+
+  const handleBlur = (field) => {
+    switch (field) {
+      case "name":
+        setnameCheck(!nameInput.length > 0);
+        break;
+      case "email":
+        setemailCheck(!emailRegex.test(mailInput));
+        break;
+      case "description":
+        setdescriptionCheck(!descriptionInput.length > 0);
+        break;
+      default:
+        break;
+    }
+  };
+
   return (
     <div className="bg-[#1C1C1C] min-h-screen">
-      <div className="flex flex-col-reverse items-center lg:flex-row justify-center gap-20 lg:gap-40 pt-16 md:pt-24 lg:pt-40 relative px-3">
+      <div className="flex flex-col-reverse items-center lg:flex-row justify-center gap-20 lg:gap-40 pt-40 md:pt-56 lg:pt-64 relative px-3">
         <div className="absolute top-0 right-0 h-[300px] w-full lg:w-[400px] xl:w-[500px] 2xl:w-[600px] lg:h-screen bg-[#FFDD00]"></div>
         <div className="mb-16 lg:mb-0 w-full md:w-auto">
           <div className="text-2xl md:text-3xl lg:text-4xl mb-20 text-white text-center md:text-left">
             Bize Ulaşın
           </div>
           <form className="" action="">
-            <input
-              className="bg-transparent border-b block mb-10 w-full md:w-96"
-              type="text"
-              id="name"
-              name="name"
-              required
-              placeholder="Adınız - Soyadınız"
-            />
-            <input
-              className="bg-transparent border-b block mb-10 w-full md:w-96"
-              type="text"
-              id="mail"
-              name="mail"
-              required
-              placeholder="Mail Adresiniz"
-            />
-            <input
-              className="bg-transparent border-b block mb-10 w-full md:w-96"
-              type="text"
-              id="message"
-              name="message"
-              required
-              placeholder="Mesajınız"
-            />
+            <div className="mb-10">
+              <input
+                className="bg-transparent border-b block w-full md:w-96 focus:outline-none text-white"
+                type="text"
+                id="name"
+                name="name"
+                required
+                placeholder="Adınız - Soyadınız"
+                onChange={(e) => setNameInput(e.target.value.trim())}
+                onBlur={() => handleBlur("name")}
+              />
+              {nameCheck && (
+                <div className="text-red-500 text-sm">
+                  Bu alanı boş bırakmayınız!
+                </div>
+              )}
+            </div>
+            <div className="mb-10">
+              <input
+                className="bg-transparent border-b block w-full md:w-96 focus:outline-none text-white"
+                type="text"
+                id="mail"
+                name="mail"
+                required
+                placeholder="Mail Adresiniz"
+                onChange={(e) => setMailInput(e.target.value)}
+                onBlur={() => handleBlur("email")}
+              />
+              {emailCheck && (
+                <div className="text-red-500 text-sm">
+                  Bu alanı boş bırakmayınız veya geçerli bir mail adresi
+                  giriniz!
+                </div>
+              )}
+            </div>
+            <div className="mb-10">
+              <input
+                className="bg-transparent border-b block w-full md:w-96 focus:outline-none text-white"
+                type="text"
+                id="message"
+                name="message"
+                required
+                placeholder="Mesajınız"
+                onChange={(e) => setDescriptionInput(e.target.value.trim())}
+                onBlur={() => handleBlur("description")}
+              />
+              {descriptionCheck && (
+                <div className="text-red-500 text-sm">
+                  Bu alanı boş bırakmayınız!
+                </div>
+              )}
+            </div>
             <button
               type="submit"
-              className="border border-[#828282] rounded-full py-1.5 px-10 text-white hover:bg-white hover:text-black transition-all duration-300 cursor-pointer"
+              disabled={isButtonDisabled}
+              className="border border-[#828282] rounded-full py-1.5 px-10 text-white hover:bg-white hover:text-black transition-all duration-300 cursor-pointer disabled:bg-gray-500 disabled:text-white"
             >
               Gönder
             </button>
