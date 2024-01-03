@@ -4,6 +4,7 @@ import Route from "./Route/Route";
 import logo from "../../assets/images/oooo.png";
 import Image from "next/image";
 import SocialLinks from "../Shared/SocialLinks";
+import Link from "next/link";
 
 Footer.propTypes = {};
 
@@ -12,7 +13,9 @@ function Footer(props) {
     <div className="bg-[#141414]">
       <div className="flex flex-col lg:flex-row 2xl:justify-between gap-y-8 sm:gap-x-52 px-5 sm:px-20 2xl:pr-96 pt-10 pb-24">
         <div>
-          <Image src={logo} width={100} height={100} alt="rain logo" />
+          <Link href="/">
+            <Image src={logo} width={100} height={100} alt="rain logo" />
+          </Link>
           <h1 className="text-white text-2xl lg:text-3xl font-bold">
             Rain Media
           </h1>

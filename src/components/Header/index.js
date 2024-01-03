@@ -9,6 +9,7 @@ import { usePathname } from "next/navigation";
 import { useSelector } from "react-redux";
 import backOur from "../../assets/images/backour.png";
 import Background from "./background";
+import Link from "next/link";
 
 function Header() {
   const router = usePathname();
@@ -27,7 +28,9 @@ function Header() {
   return (
     <div className="absolute top-0 overflow-hidden z-10 w-full">
       <header className={`flex justify-between items-center w-full p-6`}>
-        <Image src={logo} alt="logo" width={100} height="auto" />
+        <Link href="/">
+          <Image src={logo} alt="logo" width={100} height="auto" />
+        </Link>
         <div className={`flex gap-x-6 pr-10`}>
           <Navigation />
           <div className="text-white font-bold">TR</div>
