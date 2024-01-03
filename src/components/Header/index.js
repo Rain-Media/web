@@ -26,7 +26,7 @@ function Header() {
   }, [open]);
 
   return (
-    <div className="absolute top-0 overflow-hidden z-10 w-full">
+    <div className="absolute top-0 z-50 w-full">
       <header className={`flex justify-between items-center w-full p-6`}>
         <Link href="/">
           <Image src={logo} alt="logo" width={100} height="auto" />
