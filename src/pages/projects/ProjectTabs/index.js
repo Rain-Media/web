@@ -37,10 +37,8 @@ function ProjectTabs() {
             />
 
             <div
-              className={`w-full h-10 rounded-[50%] bg-[#FEFFDE]/[.40] blur-sm transition-all duration-200 ${
-                isActive
-                  ? "visible opacity-100 animate-[pulse_5s_ease-in-out_infinite]"
-                  : "invisible opacity-0"
+              className={`w-full h-10 rounded-[50%] bg-[#FEFFDE]/[.40] blur-sm transition-all duration-500 ${
+                isActive ? "visible opacity-100" : "invisible opacity-0"
               }`}
             ></div>
           </div>
