@@ -17,8 +17,6 @@ function ProjectTabs() {
     );
   };
 
-  console.log(activeTab, "activeeeee");
-
   return (
     <div className="flex items-center justify-center">
       {projects.map((project, index) => {

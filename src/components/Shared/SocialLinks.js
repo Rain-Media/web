@@ -1,12 +1,12 @@
 import React from "react";
 import { socialIcons } from "../../constants/constant";
 import Link from "next/link";
+
 export default function SocialLinks() {
   const socialLinks = socialIcons.filter((item) =>
     item.name.includes("Sosyal")
   );
 
-  //console.log(socialLinks);
   return (
     <div className="flex gap-3 justify-center">
       {socialLinks[0].links.map((link, index) => {
