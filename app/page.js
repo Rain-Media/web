@@ -29,19 +29,23 @@ export default function Page() {
           );
         })}
       </div>
-      <div className="flex flex-col sm:flex-row sm:gap-x-20 gap-y-2">
-        <div className="p-5 sm:p-20">
+      <div className="flex flex-col lg:flex-row sm:gap-x-20 gap-y-2 justify-center items-center p-10 lg:p-20">
+        <div className="">
           <Image src={opera} alt="opera" />
         </div>
-        <div className="flex flex-col gap-y-8 p-5 sm:p-20 justify-center">
-          <h2 className="text-2xl sm:text-[48px] text-white">MEM U ZIN</h2>
-          <p className="text-sm sm:text-[24px] max-w-xl text-white">
+        <div className="flex flex-col gap-y-8 justify-center">
+          <h2 className="text-3xl lg:text-5xl text-white font-bold text-center lg:text-left">
+            MEM U ZIN
+          </h2>
+          <p className="text-lg lg:text-2xl max-w-xl text-white text-center lg:text-left">
             "Epik Aşkın Dansı: Mem u Zin Operası "Tutkunun, Aşkın ve İsyanın
             Öyküsüne Hoş Geldiniz!"
           </p>
-          <button className="border border-[#828282] rounded-3xl py-3 text-white w-[150px]">
-            Daha Fazla...
-          </button>
+          <div className="flex justify-center lg:block">
+            <button className="border border-[#828282] rounded-3xl py-3 text-white w-[150px] h-[41px] flex items-center justify-center hover:bg-white hover:text-[#1c1c1c] duration-300 transition-all">
+              Daha Fazla...
+            </button>
+          </div>
         </div>
       </div>
     </div>

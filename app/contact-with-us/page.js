@@ -9,21 +9,30 @@ import SocialLinks from "../../src/components/Shared/SocialLinks";
 Page.propTypes = {};
 
 function Page(props) {
+  const [formValidation, setFormValidation] = useState({
+    nameInput: "",
+    mailInput: "",
+    descriptionInput: "",
+    nameCheck: false,
+    emailCheck: false,
+    descriptionCheck: false,
+  });
+  /*
   const [nameInput, setNameInput] = useState("");
   const [mailInput, setMailInput] = useState("");
   const [descriptionInput, setDescriptionInput] = useState("");
   const [nameCheck, setnameCheck] = useState(false);
   const [emailCheck, setemailCheck] = useState(false);
-  const [descriptionCheck, setdescriptionCheck] = useState(false);
+  const [descriptionCheck, setdescriptionCheck] = useState(false);*/
 
   const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
   const isButtonDisabled = !(
-    nameInput.length > 0 &&
-    emailRegex.test(mailInput) &&
-    descriptionInput.length > 0
+    formValidation.nameInput.length > 0 &&
+    emailRegex.test(formValidation.mailInput) &&
+    formValidation.descriptionInput.length > 0
   );
 
-  const handleBlur = (field) => {
+  /* const handleBlur = (field) => {
     switch (field) {
       case "name":
         setnameCheck(!nameInput.length > 0);
@@ -33,6 +42,31 @@ function Page(props) {
         break;
       case "description":
         setdescriptionCheck(!descriptionInput.length > 0);
+        break;
+      default:
+        break;
+    }
+  };*/
+
+  const handleBlur = (field) => {
+    switch (field) {
+      case "name":
+        setFormValidation({
+          ...formValidation,
+          nameCheck: !formValidation.nameInput.length > 0,
+        });
+        break;
+      case "email":
+        setFormValidation({
+          ...formValidation,
+          emailCheck: !emailRegex.test(formValidation.mailInput),
+        });
+        break;
+      case "description":
+        setFormValidation({
+          ...formValidation,
+          descriptionCheck: !formValidation.descriptionInput.length > 0,
+        });
         break;
       default:
         break;
@@ -56,10 +90,15 @@ function Page(props) {
                 name="name"
                 required
                 placeholder="Adınız - Soyadınız"
-                onChange={(e) => setNameInput(e.target.value.trim())}
+                onChange={(e) => {
+                  setFormValidation({
+                    ...formValidation,
+                    nameInput: e.target.value.trim(),
+                  });
+                }}
                 onBlur={() => handleBlur("name")}
               />
-              {nameCheck && (
+              {formValidation.nameCheck && (
                 <div className="text-red-500 text-sm">
                   Bu alanı boş bırakmayınız!
                 </div>
@@ -73,10 +112,15 @@ function Page(props) {
                 name="mail"
                 required
                 placeholder="Mail Adresiniz"
-                onChange={(e) => setMailInput(e.target.value)}
+                onChange={(e) => {
+                  setFormValidation({
+                    ...formValidation,
+                    mailInput: e.target.value.trim(),
+                  });
+                }}
                 onBlur={() => handleBlur("email")}
               />
-              {emailCheck && (
+              {formValidation.emailCheck && (
                 <div className="text-red-500 text-sm">
                   Bu alanı boş bırakmayınız veya geçerli bir mail adresi
                   giriniz!
@@ -91,10 +135,15 @@ function Page(props) {
                 name="message"
                 required
                 placeholder="Mesajınız"
-                onChange={(e) => setDescriptionInput(e.target.value.trim())}
+                onChange={(e) => {
+                  setFormValidation({
+                    ...formValidation,
+                    descriptionInput: e.target.value.trim(),
+                  });
+                }}
                 onBlur={() => handleBlur("description")}
               />
-              {descriptionCheck && (
+              {formValidation.descriptionCheck && (
                 <div className="text-red-500 text-sm">
                   Bu alanı boş bırakmayınız!
                 </div>
