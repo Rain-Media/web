@@ -306,6 +306,6 @@ export const projectGalleryImages = [
   },
   {
     projectName: "tomris",
-    projectImages: [tomrisImage,tomrisImage2,tomrisImage3,tomrisImage4,tomrisImage5]
+    projectImages: [tomrisImage,tomrisImage3,tomrisImage4,tomrisImage5]
   }
 ]
