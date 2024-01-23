@@ -8,7 +8,7 @@ import about4 from "../assets/images/about-4.png"
 import about5 from "../assets/images/about-5.png"
 import about6 from "../assets/images/about-6.png"
 import tomrisImage from "../assets/images/tomris/aksam_gazetesi.PNG"
-import tomrisImage2 from "../assets/images/tomris/anayurt_gazetesi.PNG"
+// import tomrisImage2 from "../assets/images/tomris/anayurt_gazetesi.PNG"
 import tomrisImage3 from "../assets/images/tomris/yazili_basin.JPG"
 import tomrisImage4 from "../assets/images/tomris/yazili_basin_2.JPG"
 import tomrisImage5 from "../assets/images/tomris/yazili_basin_3.JPG"
@@ -247,7 +247,7 @@ export const contents = [
     summary: "Bu bir kadın hikayesidir… Ama sadece kadınlarla ilgili değildir.Türk edebiyat dünyasının kendine özgü, cesur, güçlü ve özgür kalemlerinden Tomris Uyar’ın yaşamından ilhamla kaleme alınan oyunda; akıl hastanesindeki bir kadının kendini Tomris Uyar’da arayışı anlatılıyor.Oyun boyunca parlak zekasına şahit olduğumuz akıl hastanesindeki sözde “Tomris Uyar”; ilişki, aşk, evlilik kavramlarını Tomris Uyar’ın hayatından kesitlerle sorgularken kadına ve kadının toplumdaki yerine dair çok önemli mesajlar da veriyor.",
      gallery: [
       {
-        src: [tomrisImage,tomrisImage2,tomrisImage3,tomrisImage4,tomrisImage5],
+        src: [tomrisImage,tomrisImage3,tomrisImage4,tomrisImage5],
         alt: ''
       }
     ]
