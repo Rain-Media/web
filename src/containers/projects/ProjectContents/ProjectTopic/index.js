@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect } from "react";
 import ProjectContentButtons from "../ProjectContentButtons";
 import { useDispatch, useSelector } from "react-redux";
 import Image from "next/image";

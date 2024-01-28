@@ -1,10 +1,10 @@
 import React from "react";
 import film from "/src/assets/images/ph_film-slate.svg";
-import TeamMember from "../../src/pages/about-us/TeamMember";
+import TeamMember from "../../src/containers/about-us/TeamMember";
 import { teamMembers } from "../../src/constants/constant";
 import Image from "next/image";
 import aboutUsHeadingImage from "../../src/assets/images/about-us-heading-image.png";
-import AboutUsSlider from "../../src/pages/about-us/AboutUsSlider";
+import AboutUsSlider from "../../src/containers/about-us/AboutUsSlider";
 import { aboutUsTextContent } from "../../src/constants/constant";
 
 function Page(props) {

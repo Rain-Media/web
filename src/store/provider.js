@@ -2,7 +2,7 @@
 import { Provider } from "react-redux";
 import {store} from "./index";
 
-export default ({children}) => {
+function Providers ({children}) {
   
   return (
     <Provider store={store}>
@@ -10,3 +10,5 @@ export default ({children}) => {
     </Provider>
   );
 }
+
+export default Providers;

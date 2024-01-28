@@ -2,7 +2,8 @@ import "./global.css";
 import Header from "../src/components/Header";
 import Footer from "../src/components/Footer";
 import React from "react";
-import Provider from "../src/store/provider";
+import Providers from "../src/store/provider";
+
 
 export const metadata = {
   title: "Rain Media Web Project",
@@ -12,26 +13,26 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <head>
-        <title>{metadata.title}</title>
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link
-          rel="preconnect"
-          href="https://fonts.gstatic.com"
-          crossOrigin="true"
-        />
-        <link
-          href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&family=Playfair+Display:wght@400;500;600;700;800;900&display=swap"
-          rel="stylesheet"
-        />
-      </head>
-      <body className="font-lato">
-        <Provider>
-          <Header />
-          {children}
-          <Footer />
-        </Provider>
-      </body>
+    <head>
+      <title>{metadata.title}</title>
+      <link rel="preconnect" href="https://fonts.googleapis.com" />
+      <link
+        rel="preconnect"
+        href="https://fonts.gstatic.com"
+        crossOrigin="true"
+      />
+      <link
+        href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&family=Playfair+Display:wght@400;500;600;700;800;900&display=swap"
+        rel="stylesheet"
+      />
+    </head>
+    <body className="font-lato">
+    <Providers>
+      <Header />
+      {children}
+      <Footer />
+    </Providers>
+    </body>
     </html>
   );
 }

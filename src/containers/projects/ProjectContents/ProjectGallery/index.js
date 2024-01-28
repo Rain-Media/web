@@ -1,3 +1,4 @@
+"use client"
 import React, { useEffect, useState } from "react";
 import ProjectContentButtons from "../ProjectContentButtons";
 import { Swiper } from "swiper/react";
@@ -15,10 +16,10 @@ import { contents } from "../../../../constants/constant";
 
 const ProjectGallery = (props) => {
   const [projects, setProjects] = useState([]);
-  const { currentlyData, currentProject } = useSelector(
-    (state) => state.projectContent
-  );
+  const {currentlyData,currentProject} = useSelector((state) => state.projectContent);
   const dispatch = useDispatch();
+  
+  console.log(currentlyData,currentProject)
 
   useEffect(() => {
     if (currentProject) {

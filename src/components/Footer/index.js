@@ -6,9 +6,7 @@ import Image from "next/image";
 import SocialLinks from "../Shared/SocialLinks";
 import Link from "next/link";
 
-Footer.propTypes = {};
-
-function Footer(props) {
+function Footer() {
   return (
     <div className="bg-[#141414]">
       <div className="flex flex-col lg:flex-row 2xl:justify-between gap-y-8 sm:gap-x-52 px-5 sm:px-20 2xl:pr-96 pt-10 pb-24">
@@ -51,16 +49,3 @@ function Footer(props) {
 }
 
 export default Footer;
-
-/* {footerLinks.map((item, index) => {
-          return (
-            <div className="flex flex-col gap-y-6 text-white" key={index}>
-              <h2 className="mt-3">{item.name}</h2>
-              <div
-                className={`flex ${
-                  !item.name.includes("Sosyal") && "flex-col"
-                } gap-y-2 gap-x-2.5`}
-              >
-                {item.links.map((item, index) => (
-                  <Route key={index} url={item.to} name={item.name} />
-                ))}*/
