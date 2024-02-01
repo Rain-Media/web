@@ -18,15 +18,15 @@ function Page(props) {
           alt="about us heading image"
         />
         <div className="relative z-10 text-center text-white">
-          <h2 className="font-bold text-5xl mb-10">
+          <h2 className="font-bold text-5xl mb-6 md:mb-10">
             {aboutUsTextContent[0].heading}
           </h2>
-          <p className="max-w-[673px] text-xl">
+          <p className="max-w-[673px] md:text-xl">
             {aboutUsTextContent[0].description}
           </p>
         </div>
       </div>
-      <div className="py-20 px-5">
+      <div className="py-10 md:py-20 px-5 space-y-14 md:space-y-20">
         {teamMembers.map((item, index) => (
           <TeamMember
             key={index}
@@ -36,7 +36,7 @@ function Page(props) {
           />
         ))}
       </div>
-      <AboutUsSlider />
+      {/* <AboutUsSlider /> */}
     </div>
   );
 }

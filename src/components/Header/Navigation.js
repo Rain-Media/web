@@ -14,10 +14,7 @@ function Navigation() {
   return (
     <nav className={`flex gap-x-6`}>
       <MenuItems />
-      <div
-        className={`text-white md:hidden`}
-        onClick={() => dispatch(setOpen())}
-      >
+      <div className={`h-6 md:hidden`} onClick={() => dispatch(setOpen())}>
         <svg
           xmlns="http://www.w3.org/2000/svg"
           fill="none"

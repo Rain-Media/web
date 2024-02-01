@@ -17,13 +17,6 @@ function Page(props) {
     emailCheck: false,
     descriptionCheck: false,
   });
-  /*
-  const [nameInput, setNameInput] = useState("");
-  const [mailInput, setMailInput] = useState("");
-  const [descriptionInput, setDescriptionInput] = useState("");
-  const [nameCheck, setnameCheck] = useState(false);
-  const [emailCheck, setemailCheck] = useState(false);
-  const [descriptionCheck, setdescriptionCheck] = useState(false);*/
 
   const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
   const isButtonDisabled = !(
@@ -31,22 +24,6 @@ function Page(props) {
     emailRegex.test(formValidation.mailInput) &&
     formValidation.descriptionInput.length > 0
   );
-
-  /* const handleBlur = (field) => {
-    switch (field) {
-      case "name":
-        setnameCheck(!nameInput.length > 0);
-        break;
-      case "email":
-        setemailCheck(!emailRegex.test(mailInput));
-        break;
-      case "description":
-        setdescriptionCheck(!descriptionInput.length > 0);
-        break;
-      default:
-        break;
-    }
-  };*/
 
   const handleBlur = (field) => {
     switch (field) {
@@ -74,9 +51,15 @@ function Page(props) {
   };
 
   return (
-    <div className="bg-[#1C1C1C] min-h-screen">
-      <div className="flex flex-col-reverse items-center lg:flex-row justify-center gap-20 lg:gap-40 pt-40 md:pt-56 lg:pt-64 relative px-3">
-        <div className="absolute top-0 right-0 h-[300px] w-full lg:w-[400px] xl:w-[500px] 2xl:w-[600px] lg:h-screen bg-[#FFDD00]"></div>
+    <div className="bg-[#1C1C1C] min-h-screen relative">
+      <div className="relative z-40">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d632.7257189082102!2d28.98617898367439!3d41.030337776075136!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14cab762c1c857b3%3A0x98b82171a81b2598!2zUMO8cnRlbGHFnyBIYXNhbiBFZmVuZGksIFN1c2FtIFNrLiBObzoyOCBEOjIsIDM0NDI3IEJleW_En2x1L8Swc3RhbmJ1bA!5e0!3m2!1str!2str!4v1706739313579!5m2!1str!2str"
+          className="w-full h-96 md:h-[550px]"
+        ></iframe>
+      </div>
+      <div className="flex flex-col-reverse items-center lg:flex-row justify-center gap-20 lg:gap-40 pt-28 md:pt-40 px-3">
+        <div className="absolute top-0 right-0 h-[600px] w-full lg:w-[400px] xl:w-[500px] 2xl:w-[600px] lg:h-screen bg-[#FFDD00]"></div>
         <div className="mb-16 lg:mb-0 w-full md:w-auto">
           <div className="text-2xl md:text-3xl lg:text-4xl mb-20 text-white text-center md:text-left">
             Bize Ulaşın

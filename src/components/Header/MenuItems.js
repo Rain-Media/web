@@ -7,12 +7,12 @@ import { usePathname } from "next/navigation";
 export default function MenuItems() {
   const pathname = usePathname();
   return (
-    <div className="gap-x-14 box-border text-white hidden md:flex">
+    <div className="gap-x-14 hidden md:flex">
       {routes.map((route, index) => (
         <Link href={route.path} key={index}>
           {route.name}
           {pathname === route.path && (
-            <div className="bg-white w-full h-0.5"></div>
+            <div className="bg-black w-full h-0.5"></div>
           )}
         </Link>
       ))}

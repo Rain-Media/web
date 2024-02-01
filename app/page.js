@@ -11,7 +11,7 @@ export default function Page() {
   );
 
   return (
-    <div className="bg-[#1c1c1c]">
+    <div className="bg-white">
       <HomeVideo />
       <div className="mt-10">
         <SocialLinks />
@@ -34,15 +34,15 @@ export default function Page() {
           <Image src={opera} alt="opera" />
         </div>
         <div className="flex flex-col gap-y-8 justify-center">
-          <h2 className="text-3xl lg:text-5xl text-white font-bold text-center lg:text-left">
+          <h2 className="text-3xl lg:text-5xl font-bold text-center lg:text-left">
             MEM U ZIN
           </h2>
-          <p className="text-lg lg:text-2xl max-w-xl text-white text-center lg:text-left">
+          <p className="text-lg lg:text-2xl max-w-xl text-center lg:text-left">
             "Epik Aşkın Dansı: Mem u Zin Operası "Tutkunun, Aşkın ve İsyanın
             Öyküsüne Hoş Geldiniz!"
           </p>
           <div className="flex justify-center lg:block">
-            <button className="border border-[#828282] rounded-3xl py-3 text-white w-[150px] h-[41px] flex items-center justify-center hover:bg-white hover:text-[#1c1c1c] duration-300 transition-all">
+            <button className="border border-[#828282] rounded-3xl py-3 w-[150px] h-[41px] flex items-center justify-center hover:bg-white hover:text-[#1c1c1c] duration-300 transition-all">
               Daha Fazla...
             </button>
           </div>
