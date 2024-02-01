@@ -1,8 +1,7 @@
 "use client";
-
 import React, { useEffect } from "react";
 import Image from "next/image";
-import logo from "../../assets/images/oooo.png";
+import logo from "../../assets/images/rain-logo.png";
 import Navigation from "./Navigation";
 import Swiper from "./Swiper";
 import { usePathname } from "next/navigation";
@@ -15,8 +14,6 @@ function Header() {
   const router = usePathname();
   const { open } = useSelector((state) => state.hamburger);
 
-  console.log(router);
-
   useEffect(() => {
     if (open) {
       document.body.style.overflow = "hidden";
@@ -26,14 +23,14 @@ function Header() {
   }, [open]);
 
   return (
-    <div className="absolute top-0 z-50 w-full">
-      <header className={`flex justify-between items-center w-full p-6`}>
+    <div className="bg-white px-5 md:px-8 sticky top-0 z-50 shadow-md">
+      <header className={`flex justify-between items-center w-full py-2`}>
         <Link href="/">
           <Image src={logo} alt="logo" width={100} height="auto" />
         </Link>
-        <div className={`flex gap-x-6 pr-10`}>
+        <div className={`flex items-center`}>
           <Navigation />
-          <div className="text-white font-bold">TR</div>
+          <div className="pl-5 font-bold">TR</div>
         </div>
       </header>
     </div>
