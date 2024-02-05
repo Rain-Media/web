@@ -4,7 +4,7 @@ import Projects from "../../src/containers/projects";
 function Page() {
   return (
     <div>
-      <Projects/>
+      <Projects />
     </div>
   );
 }

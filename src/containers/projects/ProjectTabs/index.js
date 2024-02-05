@@ -30,15 +30,15 @@ function ProjectTabs() {
             <ProjectPoster
               src={project.image}
               alt={project.name}
-              width={isActive ? "scale-150 mx-7" : "scale-100"}
+              width={isActive ? "scale-110 mx-7 rounded-2xl" : "scale-75 brightness-75"}
               isActive={isActive}
             />
 
-            <div
+            {/* <div
               className={`w-full h-10 rounded-[50%] bg-[#FEFFDE]/[.25] blur-sm transition-all duration-500 mt-3 md:mt-10 ${
                 isActive ? "visible opacity-100" : "invisible opacity-0"
               }`}
-            ></div>
+            ></div> */}
           </div>
         );
       })}
