@@ -5,7 +5,7 @@ const ImageResize = ({ src, containerWidth, containerHeight, alt }) => {
     <div
       className={`w-[${containerWidth}] ${containerWidth} h-[${containerHeight}] relative transition-all duration-500`}
     >
-      <Image src={src} alt={alt} width={200} />
+      <Image className="rounded-sm" src={src} alt={alt} width={220} />
     </div>
   );
 };

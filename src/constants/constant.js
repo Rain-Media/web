@@ -1,6 +1,9 @@
-import memuzin from "../assets/images/memuzinposter.png";
-import damdadelivar from "../assets/images/damdadelivar.png";
-import tomris from "../assets/images/tomris.png";
+// import memuzin from "../assets/images/memuzinposter.png";
+import memuzin from "../assets/images/memuzinposter-new.png";
+// import damdadelivar from "../assets/images/damdadelivar.png";
+import damdadelivar from "../assets/images/damdadelivar-new.png";
+// import tomris from "../assets/images/tomris.png";
+import tomris from "../assets/images/tomris-new.png";
 import about1 from "../assets/images/about-1.png"
 import about2 from "../assets/images/about-2.png"
 import about3 from "../assets/images/about-3.png"

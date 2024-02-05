@@ -1,4 +1,4 @@
-"use client"
+"use client";
 import React, { useEffect, useState } from "react";
 import ProjectContentButtons from "../ProjectContentButtons";
 import { Swiper } from "swiper/react";
@@ -13,13 +13,20 @@ import { useDispatch, useSelector } from "react-redux";
 import { setCurrentlyData } from "../../../../store/features/project-contents/project-content-slice";
 import { selectCurrentProjectData } from "../../../../utils/projects";
 import { contents } from "../../../../constants/constant";
+import { IoIosArrowForward } from "react-icons/io";
+import { IoIosArrowBack } from "react-icons/io";
+import { IoIosCloseCircleOutline } from "react-icons/io";
 
 const ProjectGallery = (props) => {
   const [projects, setProjects] = useState([]);
-  const {currentlyData,currentProject} = useSelector((state) => state.projectContent);
+  const [modal, setModal] = useState(false);
+  const [currentModalImage, setCurrentModalImage] = useState(null);
+  const { currentlyData, currentProject } = useSelector(
+    (state) => state.projectContent
+  );
   const dispatch = useDispatch();
-  
-  console.log(currentlyData,currentProject)
+
+  console.log(currentlyData, currentProject);
 
   useEffect(() => {
     if (currentProject) {
@@ -50,9 +57,55 @@ const ProjectGallery = (props) => {
 
   return (
     <>
-      <ProjectContentButtons />
+      {modal && (
+        <div className="fixed top-0 left-0 w-full h-full flex items-center justify-center z-50">
+          <div
+            onClick={() => setModal(false)}
+            className="fixed top-0 left-0 w-full h-full bg-black/[0.70] flex items-center justify-center z-50"
+          ></div>
+          <IoIosCloseCircleOutline
+            onClick={() => setModal(false)}
+            className="absolute text-5xl text-white top-10 right-10 z-50 cursor-pointer"
+          />
+          <div className="relative z-50 w-full lg:w-[900px] xl:w-[1200px] h-[500px] sm:h-[800px] left-0 right-0 px-5 lg:mx-auto mx-5 flex justify-center items-center ma">
+            <Image
+              className=" object-contain"
+              src={currentlyData.gallery[0].src[currentModalImage]}
+              fill={true}
+              sizes="100%"
+              priority={true}
+              alt="movie-image"
+            />
+          </div>
+          <div
+            onClick={() => {
+              if (currentModalImage > 0) {
+                setCurrentModalImage(currentModalImage - 1);
+              } else {
+                setCurrentModalImage(currentlyData.gallery[0].src.length - 1);
+              }
+            }}
+            className="text-white text-5xl absolute bottom-10 left-20 z-50 cursor-pointer lg:bottom-auto"
+          >
+            <IoIosArrowBack />
+          </div>
+          <div
+            onClick={() => {
+              if (currentModalImage < currentlyData.gallery[0].src.length - 1) {
+                setCurrentModalImage(currentModalImage + 1);
+              } else {
+                setCurrentModalImage(0);
+              }
+            }}
+            className="text-white text-5xl absolute right-20 z-50 cursor-pointer bottom-10 lg:bottom-auto"
+          >
+            <IoIosArrowForward />
+          </div>
+        </div>
+      )}
+
       <div className="lg:flex pt-14 gap-20">
-        <div className="basis-1/3 hidden lg:block">
+        {/* <div className="basis-1/3 hidden lg:block">
           <p className="mb-10">
             Lorem, ipsum dolor sit amet consectetur adipisicing elit. Totam
             officia, tempore incidunt laborum similique atque officiis magni ea
@@ -64,8 +117,8 @@ const ProjectGallery = (props) => {
             repellendus ex earum eius sint corporis saepe quae numquam officia
             fugit?
           </p>
-        </div>
-        <div className="m max-w-4xl basis-2/3">
+        </div> */}
+        <div className="max-w-full">
           <Swiper
             effect={"coverflow"}
             grabCursor={true}
@@ -79,7 +132,7 @@ const ProjectGallery = (props) => {
               slideShadows: true,
             }}
             autoplay={{
-              delay: 2500,
+              delay: 2500000,
               disableOnInteraction: false,
             }}
             pagination={true}
@@ -90,13 +143,17 @@ const ProjectGallery = (props) => {
               return (
                 <SwiperSlide
                   key={index}
-                  className="!w-[500px] xl:!w-[600px] !h-[450px] xl:!h-[550px] -ml"
+                  className="!w-[300px] !h-[400px] sm:!w-[500px] xl:!w-[600px] sm:!h-[450px] xl:!h-[550px] -ml"
                 >
                   <Image
                     fill={true}
                     src={data}
                     alt="image"
-                    className="object-contain lg:object-cover"
+                    className="object-contain bg-white"
+                    onClick={() => {
+                      setModal(true);
+                      setCurrentModalImage(index);
+                    }}
                   />
                 </SwiperSlide>
               );

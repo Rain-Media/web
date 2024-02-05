@@ -2,6 +2,7 @@ import { footerLinks } from "../src/constants/constant";
 import Route from "../src/components/Footer/Route/Route";
 import Image from "next/image";
 import opera from "../src/assets/images/opera.png";
+import operaNew from "../src/assets/images/opera-new.png";
 import HomeVideo from "../src/components/HomeVideo";
 import SocialLinks from "../src/components/Shared/SocialLinks";
 
@@ -31,7 +32,13 @@ export default function Page() {
       </div>
       <div className="flex flex-col lg:flex-row sm:gap-x-20 gap-y-2 justify-center items-center p-10 lg:p-20">
         <div className="">
-          <Image src={opera} alt="opera" />
+          <Image
+            className="rounded-md"
+            src={operaNew}
+            width={398}
+            height={535}
+            alt="opera"
+          />
         </div>
         <div className="flex flex-col gap-y-8 justify-center">
           <h2 className="text-3xl lg:text-5xl font-bold text-center lg:text-left">
