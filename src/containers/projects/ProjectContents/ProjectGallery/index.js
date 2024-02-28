@@ -21,6 +21,8 @@ const ProjectGallery = (props) => {
   const [projects, setProjects] = useState([]);
   const [modal, setModal] = useState(false);
   const [currentModalImage, setCurrentModalImage] = useState(null);
+  const [isAnimating, setIsAnimating] = useState(false);
+  const [direction, setDirection] = useState("forward");
   const { currentlyData, currentProject } = useSelector(
     (state) => state.projectContent
   );
@@ -35,6 +37,33 @@ const ProjectGallery = (props) => {
       );
     }
   }, [currentProject]);
+
+  const goToNextSlide = () => {
+    setIsAnimating(true);
+
+    setDirection("forward");
+    setTimeout(() => {
+      if (currentModalImage < currentlyData.gallery[0].src.length - 1) {
+        setCurrentModalImage(currentModalImage + 1);
+      } else {
+        setCurrentModalImage(0);
+      }
+      setIsAnimating(false);
+    }, 10); // Geçiş süresi kadar bekletiyoruz
+  };
+  console.log(isAnimating);
+  const goToPrevSlide = () => {
+    setDirection("backward");
+    setIsAnimating(true);
+    setTimeout(() => {
+      if (currentModalImage > 0) {
+        setCurrentModalImage(currentModalImage - 1);
+      } else {
+        setCurrentModalImage(currentlyData.gallery[0].src.length - 1);
+      }
+      setIsAnimating(false);
+    }, 10); // Geçiş süresi kadar bekletiyoruz
+  };
 
   /*useEffect(() => {
     const fetchData = async () => {
@@ -58,18 +87,20 @@ const ProjectGallery = (props) => {
   return (
     <>
       {modal && (
-        <div className="fixed top-0 left-0 w-full h-full flex items-center justify-center z-50">
+        <div className="fixed top-0 left-0 w-full h-full flex items-center justify-center z-50 duration-500">
           <div
             onClick={() => setModal(false)}
-            className="fixed top-0 left-0 w-full h-full bg-black/[0.70] flex items-center justify-center z-50"
+            className="fixed top-0 left-0 w-full h-full bg-black/[0.90] flex items-center justify-center z-50"
           ></div>
           <IoIosCloseCircleOutline
             onClick={() => setModal(false)}
             className="absolute text-5xl text-white top-10 right-10 z-50 cursor-pointer"
           />
-          <div className="relative z-50 w-full lg:w-[900px] xl:w-[1200px] h-[500px] sm:h-[800px] left-0 right-0 px-5 lg:mx-auto mx-5 flex justify-center items-center ma">
+          <div className=" relative z-50 w-full lg:w-[900px] xl:w-[1200px] h-[500px] sm:h-[800px] left-0 right-0 px-5 lg:mx-auto mx-5 flex justify-center items-center">
             <Image
-              className=" object-contain"
+              className={` object-contain duration-100 ${
+                isAnimating ? null : "animate-wiggle"
+              }`}
               src={currentlyData.gallery[0].src[currentModalImage]}
               fill={true}
               sizes="100%"
@@ -78,25 +109,13 @@ const ProjectGallery = (props) => {
             />
           </div>
           <div
-            onClick={() => {
-              if (currentModalImage > 0) {
-                setCurrentModalImage(currentModalImage - 1);
-              } else {
-                setCurrentModalImage(currentlyData.gallery[0].src.length - 1);
-              }
-            }}
+            onClick={goToPrevSlide}
             className="text-white text-5xl absolute bottom-10 left-20 z-50 cursor-pointer lg:bottom-auto"
           >
             <IoIosArrowBack />
           </div>
           <div
-            onClick={() => {
-              if (currentModalImage < currentlyData.gallery[0].src.length - 1) {
-                setCurrentModalImage(currentModalImage + 1);
-              } else {
-                setCurrentModalImage(0);
-              }
-            }}
+            onClick={goToNextSlide}
             className="text-white text-5xl absolute right-20 z-50 cursor-pointer bottom-10 lg:bottom-auto"
           >
             <IoIosArrowForward />

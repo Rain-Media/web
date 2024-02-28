@@ -58,7 +58,7 @@ function Page(props) {
           className="w-full h-96 md:h-[550px]"
         ></iframe>
       </div>
-      <div className="flex flex-col-reverse items-center lg:flex-row justify-center gap-20 lg:gap-40 pt-28 md:pt-40 px-3">
+      <div className="flex flex-col-reverse items-center lg:flex-row justify-center gap-20 lg:gap-40 py-28 md:py-40">
         <div className="absolute top-0 right-0 h-[600px] w-full lg:w-[400px] xl:w-[500px] 2xl:w-[600px] lg:h-screen bg-[#FFDD00]"></div>
         <div className="mb-16 lg:mb-0 w-full md:w-auto">
           <div className="text-2xl md:text-3xl lg:text-4xl mb-20 text-white text-center md:text-left">
