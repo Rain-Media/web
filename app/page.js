@@ -5,6 +5,7 @@ import opera from "../src/assets/images/opera.png";
 import operaNew from "../src/assets/images/opera-new.png";
 import HomeVideo from "../src/components/HomeVideo";
 import SocialLinks from "../src/components/Shared/SocialLinks";
+import Link from "next/link";
 
 export default function Page() {
   const socialLinks = footerLinks.filter((item) =>
@@ -41,17 +42,18 @@ export default function Page() {
           />
         </div>
         <div className="flex flex-col gap-y-8 justify-center">
-          <h2 className="text-3xl lg:text-5xl font-bold text-center lg:text-left">
-            MEM U ZIN
+          <h2 className="text-3xl lg:text-5xl font-bold text-center lg:text-left uppercase">
+            Mem û Zîn
           </h2>
           <p className="text-lg lg:text-2xl max-w-xl text-center lg:text-left">
             "Epik Aşkın Dansı: Mem u Zin Operası "Tutkunun, Aşkın ve İsyanın
             Öyküsüne Hoş Geldiniz!"
           </p>
           <div className="flex justify-center lg:block">
-            <button className="border border-[#828282] rounded-3xl py-3 w-[150px] h-[41px] flex items-center justify-center hover:bg-white hover:text-[#1c1c1c] duration-300 transition-all">
+            
+            <Link href="/projects" className="border border-[#828282] rounded-3xl py-3 w-[150px] h-[41px] flex items-center justify-center hover:bg-white hover:text-[#1c1c1c] duration-300 transition-all">
               Daha Fazla...
-            </button>
+            </Link>
           </div>
         </div>
       </div>

@@ -1,7 +1,7 @@
 "use client";
 import React, { useEffect } from "react";
 import Image from "next/image";
-import logo from "../../assets/images/rain-logo.png";
+import logo from "../../assets/images/rain-media-logo.png";
 import Navigation from "./Navigation";
 import Swiper from "./Swiper";
 import { usePathname } from "next/navigation";
@@ -24,7 +24,7 @@ function Header() {
 
   return (
     <div className="bg-white px-5 md:px-8 sticky top-0 z-50 shadow-md">
-      <header className={`flex justify-between items-center w-full py-2`}>
+      <header className={`flex justify-between items-center w-full py-2.5 lg:px-16`}>
         <Link href="/">
           <Image src={logo} alt="logo" width={100} height="auto" />
         </Link>

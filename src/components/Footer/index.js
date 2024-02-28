@@ -1,7 +1,7 @@
 import React from "react";
 import { footerLinks } from "/src/constants/constant";
 import Route from "./Route/Route";
-import logo from "../../assets/images/oooo.png";
+import logo from "../../assets/images/rain-logo-footer.png";
 import Image from "next/image";
 import SocialLinks from "../Shared/SocialLinks";
 import Link from "next/link";
@@ -9,7 +9,7 @@ import Link from "next/link";
 function Footer() {
   return (
     <div className="bg-[#141414]">
-      <div className="flex flex-col lg:flex-row 2xl:justify-between sm:gap-x-52 px-5 sm:px-20 2xl:pr-56 pt-10 pb-24">
+      <div className="flex flex-col lg:flex-row 2xl:justify-between sm:gap-x-52 px-5 sm:px-24 2xl:pr-56 pt-10 pb-24">
         <div>
           <Link href="/">
             <Image src={logo} width={100} height={100} alt="rain logo" />
@@ -44,7 +44,7 @@ function Footer() {
         </div>
       </div>
       <div className="text-white text-xs text-center pb-5 opacity-60">
-        © 2023 Rain Media Designed by Maide Nur Girgin
+        © 2023 Rain Media
       </div>
     </div>
   );
