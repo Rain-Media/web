@@ -151,7 +151,7 @@ const ProjectGallery = (props) => {
               slideShadows: true,
             }}
             autoplay={{
-              delay: 2500000,
+              delay: 2500,
               disableOnInteraction: false,
             }}
             pagination={true}
