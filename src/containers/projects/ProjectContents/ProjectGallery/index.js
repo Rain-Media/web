@@ -49,9 +49,9 @@ const ProjectGallery = (props) => {
         setCurrentModalImage(0);
       }
       setIsAnimating(false);
-    }, 10); // Geçiş süresi kadar bekletiyoruz
+    }, 10);
   };
-  console.log(isAnimating);
+
   const goToPrevSlide = () => {
     setDirection("backward");
     setIsAnimating(true);
@@ -62,7 +62,7 @@ const ProjectGallery = (props) => {
         setCurrentModalImage(currentlyData.gallery[0].src.length - 1);
       }
       setIsAnimating(false);
-    }, 10); // Geçiş süresi kadar bekletiyoruz
+    }, 10);
   };
 
   /*useEffect(() => {
