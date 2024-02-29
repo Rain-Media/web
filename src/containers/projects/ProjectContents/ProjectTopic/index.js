@@ -51,6 +51,7 @@ const ProjectTopic = () => {
         <div className="mb-4 w-full text-center mt-12 block font-semibold">
           Özet
         </div>
+        <div className="font-lato text-base md:text-lg lg:text-xl text-[#f4f4f4] font-medium text-center mb-3">{currentlyData?.slogan}</div>
         <div className="font-lato text-base md:text-lg lg:text-xl text-[#f4f4f4] font-light text-center">
           {currentlyData?.summary}
         </div>

@@ -53,13 +53,13 @@ export const routes = [
 export const teamMembers = [
   {
     icon: '/src/assets/images/ph_film-slate.svg',
-    name: 'Dara Kutlay',
-    description: "Kariyerine Ankara Halk Tiyatrosu’nda oyuncu olarak başlayan Mehmet Dara Kutlay, Hürriyet Çocuk Kulübü’nde çocuk oyunlarında yönetmenlik yaptı. Ankara Komedi Tiyatrosu’nun kuruculuğunun yanı sıra, TRT Ankara Televizyonu’nda Film Seslendirme Sanatçısı olarak görev aldı. Oyunculuk ve Tiyatronun ardından Avrupa’da yayın yapan birçok TV kanalında sayısız projede yapımcı ve yönetmen olarak çalıştı. Mehmet Dara Kutlay, 2020 yılında Rain Media’yı kurdu."
+    name: 'Mehmet Dara Kutlay',
+    description: "Mehmet Dara Kutlay, kariyerine Ankara Halk Tiyatrosu’nda oyuncu olarak adım attı. Bu ilk deneyiminin ardından, Hürriyet Çocuk Kulübü’nde çocuk oyunlarına yönetmenlik vizyonu kattı. Ankara Komedi Tiyatrosu’nun kurucusu olan Kutlay, aynı zamanda TRT Ankara Televizyonu’nda Film Seslendirme Sanatçısı olarak sektördeki yerini sağlamlaştırdı. Tiyatro ve oyunculukla sınırlı kalmayan kariyeri, Avrupa’da faaliyet gösteren birçok televizyon kanalında, çeşitli projelerde yapımcı ve yönetmen sıfatlarıyla devam etti. Kutlay, derin sanatsal birikimi ve vizyonuyla 2020 yılında Rain Media’yı hayata geçirdi."
   },
   {
     icon: '/src/assets/images/ph_film-slate.svg',
     name: 'Zelal Sever',
-    description: 'PR ve Reklamcılık lisans eğitiminin ardından İstanbul Üniversitesi’nde İşletme Yönetimi yüksek lisansını, UCLA Extension’da Business Communications üzerine eğitim programını tamamladı. Eğitim hayatına devam ederken medya, iletişim ve turizm sektörlerinde faaliyet yürüten yerli ve yabancı birçok şirkete Marka Yöneticisi ve Proje İletişim Koordinatörü olarak görev aldı. 2020 yılında Rain’in kuruluşunda yer alan Zelal Sever şirketin Proje Yöneticisi olarak görevini yürütüyor.'
+    description: 'Zelal Sever, PR ve Reklamcılık lisans eğitimi ve ardından gelen MBA programını başarıyla tamamladıktan sonra, sinema sektörüne olan ilgisiyle profesyonel anlamda eğitim aldı ve bu alanda çalışmalara imza attı. Tiyatro prodüksiyonlarına da yapımcı kimliğiyle katkıda bulunarak sanatsal vizyonunu genişletti. Sürekli öğrenme arzusuyla, yaratıcılığını ve iletişim becerilerini daha da geliştirmek adına UCLA Extension’da Business Communications programında eğitim aldı. Hem yerel hem uluslararası medya, iletişim ve turizm alanlarında, Marka Yöneticisi ve Proje İletişim Koordinatörü rollerini üstlendi. 2020’de Rain Media’nın kurucu ekibinde yer alarak, vizyonunu ve yaratıcılığını daha geniş bir izleyici kitlesine taşıdı'
   }
 ]
 
@@ -231,9 +231,7 @@ export const contents = [
       Kürt kültürüne ve tarihine dair derin bir anlayış sunan bu eser; aşkın, aile ve toplumsal baskıların gölgesinde nasıl bir yol izlediğini, tutkunun ve fedakarlığın sınırlarını ve bu sınırların aşk uğruna nasıl zorlandığını irdeler. Operanın, bu efsanevi hikayeyi sahnelemesi, hem Kürt kültürünün evrenselliğini vurgulamakta hem de aşkın ve insan ruhunun kırılganlığının, farklı kültürlerde ve zaman dilimlerinde nasıl benzer temalarla işlendiğini göstermektedir.
       Mem û Zîn Operası, yalnızca dünyada sahnelenen ilk Kürtçe opera olmasıyla değil, aynı zamanda kültürümüzün köklü geçmişini, değerli edebiyatını ve dinamik kültürel yapısını evrensel bir platforma taşıma kapasitesiyle dikkat çeker. Kürt dilinin ritmik ve melodik zenginliklerini tüm dünyaya sunarak, kültürel çeşitliliği ve dilsel derinliği vurgulayan bu eser, tüm dünyada sanatseverlerin ilgisini çekme potansiyeline sahiptir.`,
     highlight: "",
-    summary: `Mem û Zîn Operası, 17. yüzyılda Ehmedê Xanî tarafından kaleme alınan ve Kürt edebiyatında önemli bir yere sahip olan trajik aşk destanı "Mem û Zîn"in operaya dönüştürülmüş bir yorumudur. Bu eser, kimi evrensel temalarıyla Shakespeare'in "Romeo ve Juliet" hikayesine benzerlikler gösterir; aşkın saf gücünü, tutkunun derinliğini, feodal toplum yapısının getirdiği zorlukları ve adaletsizliklerin gölgesindeki direnci merkezine alır.
-      Kürt kültürüne ve tarihine dair derin bir anlayış sunan bu eser; aşkın, aile ve toplumsal baskıların gölgesinde nasıl bir yol izlediğini, tutkunun ve fedakarlığın sınırlarını ve bu sınırların aşk uğruna nasıl zorlandığını irdeler. Operanın, bu efsanevi hikayeyi sahnelemesi, hem Kürt kültürünün evrenselliğini vurgulamakta hem de aşkın ve insan ruhunun kırılganlığının, farklı kültürlerde ve zaman dilimlerinde nasıl benzer temalarla işlendiğini göstermektedir.
-      Mem û Zîn Operası, yalnızca dünyada sahnelenen ilk Kürtçe opera olmasıyla değil, aynı zamanda kültürümüzün köklü geçmişini, değerli edebiyatını ve dinamik kültürel yapısını evrensel bir platforma taşıma kapasitesiyle dikkat çeker. Kürt dilinin ritmik ve melodik zenginliklerini tüm dünyaya sunarak, kültürel çeşitliliği ve dilsel derinliği vurgulayan bu eser, tüm dünyada sanatseverlerin ilgisini çekme potansiyeline sahiptir.`,
+    summary: `Mem û Zîn Operası, 17. yüzyılda Ehmedê Xanî tarafından kaleme alınan ve Kürt edebiyatında önemli bir yere sahip olan trajik aşk destanı “Mem û Zîn”in operaya dönüştürülmüş bir yorumudur. Bu eser, aşkın saf gücünü, tutkunun derinliğini ve feodal toplum yapısının getirdiği zorlukları ve adaletsizliklerin gölgesindeki direnci merkezine alır.`,
     gallery: [
       {
         src: [memuzinImage,memuzinImage2,memuzinImage3,memuzinImage4,memuzinImage5,memuzinImage6,memuzinImage7,memuzinImage8,memuzinImage9],
@@ -247,7 +245,7 @@ export const contents = [
     slogan: "Yalnızlığımdır Özgürlüğümün Bedeli",
     description: 'Parlak zekasına rağmen duygusal karmaşaları ile mücadele eden akıl hastanesindeki bir kadının kendini Türk edebiyat dünyasının kendine özgü, cesur, güçlü ve özgür kalemlerinden Tomris Uyar’da aramasını konu edinen tek kişilik tiyatro oyunu “Tomris"',
     highlight: "Tarihin karanlık sayfalarında kaybolan bir kadının hikayesi.",
-    summary: "Bu bir kadın hikayesidir… Ama sadece kadınlarla ilgili değildir.Türk edebiyat dünyasının kendine özgü, cesur, güçlü ve özgür kalemlerinden Tomris Uyar’ın yaşamından ilhamla kaleme alınan oyunda; akıl hastanesindeki bir kadının kendini Tomris Uyar’da arayışı anlatılıyor.Oyun boyunca parlak zekasına şahit olduğumuz akıl hastanesindeki sözde “Tomris Uyar”; ilişki, aşk, evlilik kavramlarını Tomris Uyar’ın hayatından kesitlerle sorgularken kadına ve kadının toplumdaki yerine dair çok önemli mesajlar da veriyor.",
+    summary: "Türk edebiyat dünyasının kendine özgü, cesur, güçlü ve özgür kalemlerinden Tomris Uyar’ın yaşamından ilhamla kaleme alınan oyunda; akıl hastanesindeki bir kadının kendini Tomris Uyar’da arayışı anlatılıyor. Oyun boyunca parlak zekasına şahit olduğumuz akıl hastanesindeki sözde “Tomris Uyar”; ilişki, aşk, evlilik kavramlarını Tomris Uyar’ın hayatından kesitlerle sorgularken kadına ve kadının toplumdaki yerine dair çok önemli mesajlar da veriyor.",
      gallery: [
       {
         src: [tomrisImage,tomrisImage3,tomrisImage4,tomrisImage5],
@@ -258,8 +256,8 @@ export const contents = [
   {
     name: "damdadelivar",
     poster: damdadelivar,
-    slogan: "Damda Deli Var",
-    summary: `“Damda Deli Var" Müzikali, Orostopontopolis adında kurgusal bir ülkede yaşanan politik, ekonomik ve sosyal olayları mizahi bir dille sahneye taşıyor. Aziz Nesin'in aynı adlı eserinden esinlenen bu iki perdelik müzikli oyun, damdaki bir delinin muhtarlıktan imparatorluğa kadar yükselme cüretini ele alarak, ince esprilerle harmanlanmış eleştirilerle izleyicisini hem güldürüyor hem de düşündürüyor.`,
+    slogan: "",
+    summary: `“Damda Deli Var” Müzikali, Orostopontopolis adında kurgusal bir ülkede yaşanan politik, ekonomik ve sosyal olayları mizahi bir dille sahneye taşıyor. Aziz Nesin’in aynı adlı eserinden esinlenen bu iki perdelik müzikli oyun, damdaki bir delinin muhtarlıktan imparatorluğa kadar yükselme cüretini ele alarak, ince esprilerle harmanlanmış eleştirilerle izleyicisini hem güldürüyor hem de düşündürüyor.`,
     description: `“Damda Deli Var" Müzikali, Orostopontopolis adında kurgusal bir ülkede yaşanan politik, ekonomik ve sosyal olayları mizahi bir dille sahneye taşıyor. Aziz Nesin'in aynı adlı eserinden esinlenen bu iki perdelik müzikli oyun, damdaki bir delinin muhtarlıktan imparatorluğa kadar yükselme cüretini ele alarak, ince esprilerle harmanlanmış eleştirilerle izleyicisini hem güldürüyor hem de düşündürüyor.`,
      gallery: [
       {
@@ -294,7 +292,7 @@ export const aboutUsSliderItems = [
 export const aboutUsTextContent = [
   {
     heading: "Rain Media",
-    description: " Rain Media, sanatın büyüsünü seyircilerine taşıma misyonuyla yola çıkan; farkını yaratıcılık, tutku ve cesaret ile sergileyen, her projede sıradanın ötesine geçmeyi hedefleyen, izleyicilerine farklı ve akılda kalıcı deneyimler sunmak için yenilikçi yaklaşımlar benimseyen genç ve dinamik bir medya şirketidir."
+    description: "Rain Media olarak, her projemizle özgünlük ve yaratıcılığı tutkulu bir enerjiyle sahneye taşıyoruz. Sinema, opera, tiyatro; bu sanatsal yollarla izleyicilere sadece bir eser değil, kalplerine dokunan bir deneyim sunuyoruz. Usta ekibimiz sayesinde, her sahnede iz bırakıyoruz."
   }
 ]
 

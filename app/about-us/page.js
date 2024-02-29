@@ -9,7 +9,7 @@ import { aboutUsTextContent } from "../../src/constants/constant";
 
 function Page(props) {
   return (
-    <div className="bg-[#1C1C1C] pb-5 md:pb-10">
+    <div className="bg-white pb-5 md:pb-10">
       <div className="relative w-full h-[609px] flex items-center justify-center">
         <Image
           className="object-cover"
