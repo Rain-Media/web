@@ -15,6 +15,8 @@ import tomrisImage from "../assets/images/tomris/aksam_gazetesi.PNG"
 import tomrisImage3 from "../assets/images/tomris/yazili_basin.JPG"
 import tomrisImage4 from "../assets/images/tomris/yazili_basin_2.JPG"
 import tomrisImage5 from "../assets/images/tomris/yazili_basin_3.JPG"
+import tomrisImage6 from "../assets/images/tomris/tomris-image.jpg"
+import tomrisImage7 from "../assets/images/tomris/tomris-image-2.jpg"
 import damdaImage from "../assets/images/damdadelivar/damda.png"
 import damdaImage2 from "../assets/images/damdadelivar/damda2.jpg"
 import damdaImage3 from "../assets/images/damdadelivar/damda3.png"
@@ -46,7 +48,7 @@ export const routes = [
   },
   {
     path: '/contact-with-us',
-    name: 'Contact With Us',
+    name: 'Contact Us',
   }
 ];
 
@@ -226,12 +228,12 @@ export const contents = [
   {
     name: "memuzin",
     poster: memuzin,
-    slogan: "",
+    slogan: "Aşkın ve Direncin Operası: Mem û Zîn’den Evrensel Bir Hikaye",
     description: `Mem û Zîn Operası, 17. yüzyılda Ehmedê Xanî tarafından kaleme alınan ve Kürt edebiyatında önemli bir yere sahip olan trajik aşk destanı "Mem û Zîn"in operaya dönüştürülmüş bir yorumudur. Bu eser, kimi evrensel temalarıyla Shakespeare'in "Romeo ve Juliet" hikayesine benzerlikler gösterir; aşkın saf gücünü, tutkunun derinliğini, feodal toplum yapısının getirdiği zorlukları ve adaletsizliklerin gölgesindeki direnci merkezine alır.
       Kürt kültürüne ve tarihine dair derin bir anlayış sunan bu eser; aşkın, aile ve toplumsal baskıların gölgesinde nasıl bir yol izlediğini, tutkunun ve fedakarlığın sınırlarını ve bu sınırların aşk uğruna nasıl zorlandığını irdeler. Operanın, bu efsanevi hikayeyi sahnelemesi, hem Kürt kültürünün evrenselliğini vurgulamakta hem de aşkın ve insan ruhunun kırılganlığının, farklı kültürlerde ve zaman dilimlerinde nasıl benzer temalarla işlendiğini göstermektedir.
       Mem û Zîn Operası, yalnızca dünyada sahnelenen ilk Kürtçe opera olmasıyla değil, aynı zamanda kültürümüzün köklü geçmişini, değerli edebiyatını ve dinamik kültürel yapısını evrensel bir platforma taşıma kapasitesiyle dikkat çeker. Kürt dilinin ritmik ve melodik zenginliklerini tüm dünyaya sunarak, kültürel çeşitliliği ve dilsel derinliği vurgulayan bu eser, tüm dünyada sanatseverlerin ilgisini çekme potansiyeline sahiptir.`,
     highlight: "",
-    summary: `Mem û Zîn Operası, 17. yüzyılda Ehmedê Xanî tarafından kaleme alınan ve Kürt edebiyatında önemli bir yere sahip olan trajik aşk destanı “Mem û Zîn”in operaya dönüştürülmüş bir yorumudur. Bu eser, aşkın saf gücünü, tutkunun derinliğini ve feodal toplum yapısının getirdiği zorlukları ve adaletsizliklerin gölgesindeki direnci merkezine alır.`,
+    summary: `Kürt edebiyatının zamansız destanı Mem û Zîn üzerine kurulu bu opera, aşkın ve direncin evrensel hikayesini sahneliyor. Tarihi derinliklerden süzülüp gelen bu efsanevi aşk öyküsü, feodal engeller ve toplumsal baskılar karşısında direnen iki kalbin hikayesiyle, kültürel sınırları aşarak evrensel bir yankı uyandırıyor. Projemiz, aşkın dönüştürücü gücüne ve insan ruhunun kırılganlığına odaklanarak, her izleyiciye kültürler üstü bir keşif yolculuğu sunuyor.`,
     gallery: [
       {
         src: [memuzinImage,memuzinImage2,memuzinImage3,memuzinImage4,memuzinImage5,memuzinImage6,memuzinImage7,memuzinImage8,memuzinImage9],
@@ -248,7 +250,7 @@ export const contents = [
     summary: "Türk edebiyat dünyasının kendine özgü, cesur, güçlü ve özgür kalemlerinden Tomris Uyar’ın yaşamından ilhamla kaleme alınan oyunda; akıl hastanesindeki bir kadının kendini Tomris Uyar’da arayışı anlatılıyor. Oyun boyunca parlak zekasına şahit olduğumuz akıl hastanesindeki sözde “Tomris Uyar”; ilişki, aşk, evlilik kavramlarını Tomris Uyar’ın hayatından kesitlerle sorgularken kadına ve kadının toplumdaki yerine dair çok önemli mesajlar da veriyor.",
      gallery: [
       {
-        src: [tomrisImage,tomrisImage3,tomrisImage4,tomrisImage5],
+        src: [tomrisImage6,tomrisImage7,tomrisImage,tomrisImage3,tomrisImage4,tomrisImage5],
         alt: ''
       }
     ]
@@ -292,7 +294,8 @@ export const aboutUsSliderItems = [
 export const aboutUsTextContent = [
   {
     heading: "Rain Media",
-    description: "Rain Media olarak, her projemizle özgünlük ve yaratıcılığı tutkulu bir enerjiyle sahneye taşıyoruz. Sinema, opera, tiyatro; bu sanatsal yollarla izleyicilere sadece bir eser değil, kalplerine dokunan bir deneyim sunuyoruz. Usta ekibimiz sayesinde, her sahnede iz bırakıyoruz."
+    description: "Rain Media olarak, her projemizle özgünlük ve yaratıcılığı tutkulu bir enerjiyle sahneye taşıyoruz. Sinema, opera, tiyatro; bu sanatsal yollarla izleyicilere sadece bir eser değil, kalplerine dokunan bir deneyim sunuyoruz. Usta ekibimiz sayesinde, her sahnede iz bırakıyoruz.",
+    description2: "Mem û Zîn Operası gibi kültürel mirası olan projelere öncülük ediyor, sanatın ufuklarını genişletiyoruz. Sosyal sorumluluğumuzun gereği, sanata erişimi kolaylaştıran projelerle topluma hizmet ediyor, bu misyonla hareket ediyoruz. Sanatsal vizyonumuzu sizlerle paylaşmanın heyecanını yaşıyoruz."
   }
 ]
 

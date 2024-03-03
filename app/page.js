@@ -43,11 +43,10 @@ export default function Page() {
         </div>
         <div className="flex flex-col gap-y-8 justify-center">
           <h2 className="text-3xl lg:text-5xl font-bold text-center lg:text-left uppercase">
-            Mem û Zîn
+            Mem û Zîn Operası
           </h2>
           <p className="text-lg lg:text-2xl max-w-xl text-center lg:text-left">
-            "Epik Aşkın Dansı: Mem u Zin Operası "Tutkunun, Aşkın ve İsyanın
-            Öyküsüne Hoş Geldiniz!"
+            Mem û Zin Operası ile Tutku ve İsyanın Epik Aşk Yolculuğuna Hoş Geldiniz!
           </p>
           <div className="flex justify-center lg:block">
             

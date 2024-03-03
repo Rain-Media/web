@@ -12,17 +12,20 @@ function Page(props) {
     <div className="bg-white pb-5 md:pb-10">
       <div className="relative w-full h-[609px] flex items-center justify-center">
         <Image
-          className="object-cover"
+          className="object-cover brightness-90"
           src={aboutUsHeadingImage}
           fill={true}
           alt="about us heading image"
         />
-        <div className="relative z-10 text-center text-white">
-          <h2 className="font-bold text-5xl mb-6 md:mb-10">
+        <div className="relative z-10 text-center text-white px-2">
+          {/* <h2 className="font-bold text-5xl mb-6 md:mb-10">
             {aboutUsTextContent[0].heading}
-          </h2>
-          <p className="max-w-[673px] md:text-xl">
+          </h2> */}
+          <p className="max-w-[673px] md:text-xl mb-4">
             {aboutUsTextContent[0].description}
+          </p>
+          <p className="max-w-[673px] md:text-xl">
+            {aboutUsTextContent[0].description2}
           </p>
         </div>
       </div>
