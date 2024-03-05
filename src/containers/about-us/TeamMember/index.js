@@ -12,8 +12,8 @@ export default function ({ icon, name, description }) {
         />
       </div> */}
       <div className="px-2">
-        <h2 className="text-2xl font-bold mb-8">{name}</h2>
-        <p className="text-base md:text-lg">{description}</p>
+        <h2 className="text-xl font-bold mb-8">{name}</h2>
+        <p className="text-base">{description}</p>
       </div>
     </div>
   );

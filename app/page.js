@@ -3,6 +3,7 @@ import Route from "../src/components/Footer/Route/Route";
 import Image from "next/image";
 import opera from "../src/assets/images/opera.png";
 import operaNew from "../src/assets/images/opera-new.png";
+import operaNewWide from "../src/assets/images/opera-new-wide.png";
 import HomeVideo from "../src/components/HomeVideo";
 import SocialLinks from "../src/components/Shared/SocialLinks";
 import Link from "next/link";
@@ -31,23 +32,22 @@ export default function Page() {
           );
         })}
       </div>
-      <div className="flex flex-col lg:flex-row sm:gap-x-20 gap-y-2 justify-center items-center p-10 lg:p-20">
-        <div className="">
+      <div className="flex flex-col lg:flex-row sm:gap-x-20 gap-y-2 justify-center items-center p-10 lg:p-20 mb-10 md:mb-20">
+        <div className="mb-7 md:mb-0">
           <Image
             className="rounded-md"
-            src={operaNew}
-            width={398}
-            height={535}
+            src={operaNewWide}
+            width={710}
+            height={501}
             alt="opera"
           />
         </div>
-        <div className="flex flex-col gap-y-8 justify-center">
+        <div className="flex flex-col gap-y-4 lg:gap-y-8 justify-center">
           <h2 className="text-3xl lg:text-5xl font-bold text-center lg:text-left uppercase">
-            Mem û Zîn
+            Mem û Zîn Operası
           </h2>
           <p className="text-lg lg:text-2xl max-w-xl text-center lg:text-left">
-            "Epik Aşkın Dansı: Mem u Zin Operası "Tutkunun, Aşkın ve İsyanın
-            Öyküsüne Hoş Geldiniz!"
+            Mem û Zin Operası ile Tutku ve İsyanın Epik Aşk Yolculuğuna Hoş Geldiniz!
           </p>
           <div className="flex justify-center lg:block">
             

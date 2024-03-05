@@ -96,7 +96,7 @@ const ProjectGallery = (props) => {
             onClick={() => setModal(false)}
             className="absolute text-5xl text-white top-10 right-10 z-50 cursor-pointer"
           />
-          <div className=" relative z-50 w-full lg:w-[900px] xl:w-[1200px] h-[500px] sm:h-[800px] left-0 right-0 px-5 lg:mx-auto mx-5 flex justify-center items-center">
+          <div className=" relative z-50 w-full lg:w-[900px] xl:w-[1200px] h-[500px] sm:h-[700px] left-0 right-0 px-5 lg:mx-auto mx-5 flex justify-center items-center">
             <Image
               className={` object-contain duration-100 ${
                 isAnimating ? null : "animate-wiggle"
